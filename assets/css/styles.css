@@ -42,10 +42,7 @@ section {
 	background: #063647;
   position: sticky; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
-}
-
-.main {
-	margin-top: 50px;
+	border-radius: 15px;
 }
 
 a.nav-item {
@@ -72,8 +69,8 @@ a.nav-item:hover {
 }
 
 .social-icons {
-	max-width: 60%;
-	max-height: 60%;
+	max-width: 40%;
+	max-height: 40%;
 }
 
 .project-figure {
