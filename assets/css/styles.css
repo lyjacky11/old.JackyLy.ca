@@ -38,6 +38,12 @@ section{
 	padding: 0.2rem;
 }
 
+.sticky {
+	background: #063647;
+  position: sticky; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+}
+
 a.nav-item {
 	color: #dfdfdf;
 }
