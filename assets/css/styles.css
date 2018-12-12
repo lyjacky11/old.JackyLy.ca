@@ -71,6 +71,11 @@ a.nav-item:hover {
 	margin-bottom:15px;
 }
 
+.social-icons {
+	max-width: 60%;
+	max-height: 60%;
+}
+
 .project-figure {
 	margin: 0 auto 1rem auto;
 	max-height: 256px;
@@ -122,5 +127,8 @@ a.nav-item:hover {
 	.nav-toggle span:hover {
 		background-color: #fff;
 	}
-
+	.social-icons {
+		width: 20%;
+		height: 20%;
+	}
 }
