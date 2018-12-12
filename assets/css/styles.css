@@ -1,7 +1,8 @@
 html, body{
 	font-size:16px;
 	color: #dfdfdf;
-	background-color: #063647; 
+	background-color: #063647;
+	scroll-behavior: smooth;
 }
 
 a {
@@ -31,6 +32,9 @@ section{
 
 .section-4 {
 	background-color: #063647;
+}
+.section-5 {
+	background-color: #0E282E;
 	padding: 0.2rem;
 }
 
@@ -77,6 +81,10 @@ a.nav-item:hover {
 	text-align: left;
 	margin-bottom: 2rem;
 }
+.name {
+	color: #fff;
+	text-align: center;
+}
 
 .intro {
 	text-align: justify;
@@ -85,7 +93,7 @@ a.nav-item:hover {
 }
 
 .void-background {
-	background-color: transparent; 
+	background-color: transparent;
 }
 
 @media screen and (max-width: 768px) {
