@@ -44,6 +44,10 @@ section{
   top: 0; /* Position the navbar at the top of the page */
 }
 
+.main {
+	margin-top: 50px;
+}
+
 a.nav-item {
 	color: #dfdfdf;
 }
