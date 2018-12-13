@@ -16,7 +16,7 @@
 		var url = window.location.toString();
 		//Remove anchor from url using the split
 		url = url.split(“#”)[0];
-		history.replaceState(null, null, url);
+		history.pushState(null, null, url);
 	}
 	</script>
 </head>
