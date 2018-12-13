@@ -11,14 +11,16 @@
 	<meta name="author" content="Jacky Ly">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script type="text/javascript">
-		var uri = window.location.toString();
-		if (uri.indexOf("#") > 0) {
-    	var clean_uri = uri.substring(0, uri.indexOf("#"));
-    	window.history.replaceState({}, document.title, clean_uri);
-		}
+		function remove_anchor() {
+		//Grab our current Url
+		var url = window.location.toString();
+		//Remove anchor from url using the split
+		url = url.split(“#”)[0];
+		history.replaceState(null, null, url);
+	}
 	</script>
 </head>
-	<body>
+	<body onload="remove_anchor();">
 		<div id="home"></div>
 		<!-- Navbar -->
 		<nav class="sticky nav container">
@@ -53,11 +55,11 @@
 			</div>
 
 			<div class="nav-right nav-menu">
-				<a class="nav-item" href="#home"><b>Home</b></a>
-				<a class="nav-item" href="#about"><b>About</b></a>
-				<a class="nav-item" href="#projects"><b>Projects</b></a>
-				<a class="nav-item" href="#resume"><b>Resume</b></a>
-				<a class="nav-item" href="#social"><b>Social</b></a>
+				<a class="nav-item" href="#home" onclick="remove_anchor();"><b>Home</b></a>
+				<a class="nav-item" href="#about" onclick="remove_anchor();"><b>About</b></a>
+				<a class="nav-item" href="#projects" onclick="remove_anchor();"><b>Projects</b></a>
+				<a class="nav-item" href="#resume" onclick="remove_anchor();"><b>Resume</b></a>
+				<a class="nav-item" href="#social" onclick="remove_anchor();"><b>Social</b></a>
 			</div>
 
 			<!-- This "nav-toggle" hamburger menu is only visible on mobile -->
@@ -188,6 +190,8 @@
 			&emsp;
 			<a target="_blank" href="https://status.lyjacky11.me/">Website Status</a>
 			<h5>Email: <a target="_blank" href="mailto:jacky.ly@ryerson.ca" target="_top"><u>jacky.ly@ryerson.ca</u></a></h5>
+			<br>
+			<h6 align="center">Copyright © 2018 Jacky Ly.</h6>
 		</section>
 		<!-- Scripts  -->
 		<!-- Place this tag in your head or just before your close body tag. -->
