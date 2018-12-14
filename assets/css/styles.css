@@ -42,7 +42,7 @@ section {
 	background: #063647;
   position: sticky; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
-	border-radius: 15px;
+	border-radius: 15px; /* Rounded corners */
 }
 
 a.nav-item {
@@ -51,11 +51,19 @@ a.nav-item {
 
 a.nav-item:hover {
 	color: #fff;
+	transform: scale(1.15);
+	transition: 0.25s
 }
 
 .avatar{
 	height:200px;
 	border-radius: 50%;
+}
+
+/* Hover Popup */
+.popup:hover {
+	transform: scale(1.1);
+	transition: 0.25s
 }
 
 .intro-description{
@@ -124,6 +132,11 @@ a.nav-item:hover {
 	.nav-toggle span:hover {
 		background-color: #fff;
 	}
+
+	a.nav-item:hover {
+		transform: scale(1.0);
+	}
+
 	.social-icons {
 		width: 20%;
 		height: 20%;
