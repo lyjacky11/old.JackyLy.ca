@@ -10,6 +10,17 @@
 	<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
 	<meta name="author" content="Jacky Ly">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript">
+	function view_pdf(file) {
+		gdocs = "http://docs.google.com/viewer?url=" + location.href;
+	if (screen.width <= 768) {
+			document.getElementById('resume-pdf').href = gdocs + file;
+		}
+		else {
+			document.getElementById('resume-pdf').href = file;
+		}
+	}
+</script>
 </head>
 	<body>
 		<div id="home"></div>
@@ -145,7 +156,7 @@
 				</div>
 				<div class="social-container columns">
 					<div class="column has-text-centered popup">
-						<a target="_blank" href="http://docs.google.com/viewer?url=https://lyjacky11.me/assets/jacky-ly-resume.pdf"><img class="" src="assets/img/resume.png"></a>
+						<a target="_blank" id="resume-pdf" onclick="view_pdf('assets/jacky-ly-resume.pdf')"><img class="" src="assets/img/resume.png"></a>
 					</div>
 				</div>
 			</div>
