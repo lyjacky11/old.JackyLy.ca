@@ -14,8 +14,8 @@
 	<script type="text/javascript">
 	function view_pdf(file) {
 	if (screen.width <= 768) {
-			gdocs = "http://docs.google.com/viewer?url=" + location.href;
-			document.getElementById('resume-pdf').href = gdocs + file;
+			gdocs = "https://docs.google.com/viewer?url=" + location.href;
+			document.getElementById('resume-pdf').href = gdocs + file + "&embedded=true";
 		}
 		else {
 			document.getElementById('resume-pdf').href = file;
