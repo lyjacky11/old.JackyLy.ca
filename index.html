@@ -12,8 +12,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script type="text/javascript">
 	function view_pdf(file) {
-		gdocs = "http://docs.google.com/viewer?url=" + location.href;
 	if (screen.width <= 768) {
+			gdocs = "http://docs.google.com/viewer?url=" + location.href;
 			document.getElementById('resume-pdf').href = gdocs + file;
 		}
 		else {
