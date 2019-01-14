@@ -58,6 +58,8 @@ ui.start('#firebaseui-auth-container', uiConfig);
  * @param {!firebase.User} user
  */
 var handleSignedInUser = function(user) {
+  document.getElementById('sign-in-div').style.display = 'none';
+  document.getElementById('authentication').style.display = 'block';
   document.getElementById('user-signed-in').style.display = 'block';
   document.getElementById('user-signed-out').style.display = 'none';
   document.getElementById('firebaseui-auth-container').style.display = 'none';
@@ -127,7 +129,7 @@ var initApp = function() {
 		firebase.auth().signOut();
   });
   document.getElementById('delete-account').addEventListener('click', function() {
-    if(confirm('Are you sure you want to delete this account?'))
+    if(confirm('Are you sure you want to delete this account?'))    
 		deleteAccount();
   });
 };
