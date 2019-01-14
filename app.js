@@ -32,9 +32,9 @@ var uiConfig = {
     firebase.auth.GoogleAuthProvider.PROVIDER_ID,
     //firebase.auth.FacebookAuthProvider.PROVIDER_ID,
     //firebase.auth.TwitterAuthProvider.PROVIDER_ID,
-    //firebase.auth.GithubAuthProvider.PROVIDER_ID,
+    firebase.auth.GithubAuthProvider.PROVIDER_ID,
     firebase.auth.EmailAuthProvider.PROVIDER_ID,
-    firebase.auth.PhoneAuthProvider.PROVIDER_ID,
+    //firebase.auth.PhoneAuthProvider.PROVIDER_ID,
     //firebaseui.auth.AnonymousAuthProvider.PROVIDER_ID
   ],
   // tosUrl and privacyPolicyUrl accept either url string or a callback
@@ -127,7 +127,7 @@ var initApp = function() {
 		firebase.auth().signOut();
   });
   document.getElementById('delete-account').addEventListener('click', function() {
-    if(confirm('Are you sure you want to delete this account?'))    
+    if(confirm('Are you sure you want to delete this account?'))
 		deleteAccount();
   });
 };
