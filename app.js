@@ -42,9 +42,9 @@ var uiConfig = {
   // Terms of service url/callback.
   //tosUrl: '#',
   // Privacy policy url/callback.
-  privacyPolicyUrl: function() {
-    window.location.assign('#');
-  }
+  //privacyPolicyUrl: function() {
+  //  window.location.assign('#');
+  //}
 };
 
 // Initialize the FirebaseUI Widget using Firebase.
@@ -127,7 +127,7 @@ var initApp = function() {
 		firebase.auth().signOut();
   });
   document.getElementById('delete-account').addEventListener('click', function() {
-    if(confirm('Are you sure you want to delete this account?'))    
+    if(confirm('Are you sure you want to delete this account?'))
 		deleteAccount();
   });
 };
