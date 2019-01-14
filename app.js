@@ -1,7 +1,7 @@
 // Initialize Firebase
 var config = {
   apiKey: "AIzaSyBYhCeWnxBnIZh4VHWKULQl1wg62fplD0c",
-  authDomain: "login-auth-ed4eb.firebaseapp.com",
+  authDomain: "app.lyjacky11.me",
   databaseURL: "https://login-auth-ed4eb.firebaseio.com",
   projectId: "login-auth-ed4eb",
   storageBucket: "login-auth-ed4eb.appspot.com",
@@ -127,7 +127,7 @@ var initApp = function() {
 		firebase.auth().signOut();
   });
   document.getElementById('delete-account').addEventListener('click', function() {
-    if(confirm('Are you sure you want to delete this account?'))
+    if(confirm('Are you sure you want to delete this account?'))    
 		deleteAccount();
   });
 };
