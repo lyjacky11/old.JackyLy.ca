@@ -13,13 +13,22 @@
 	<link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
 	<meta name="author" content="Jacky Ly">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="I am an undergraduate student majoring in computer science at Ryerson University. I can write code in Python, Java, HTML/CSS, and JavaScript. Most of my projects are available on my GitHub profile.">
 	<!-- Scripts  -->
-	<script src="https://www.gstatic.com/firebasejs/5.7.3/firebase-app.js"></script>
-	<script src="https://www.gstatic.com/firebasejs/5.7.3/firebase-auth.js"></script>
-	<script src="https://cdn.firebase.com/libs/firebaseui/3.5.1/firebaseui.js"></script>
-	<script src="app.js"></script>
-	<script src="buttons.js"></script>
-	<script src="controller.js"></script>
+	<script async src="https://www.gstatic.com/firebasejs/5.7.3/firebase-app.js"></script>
+	<script async src="https://www.gstatic.com/firebasejs/5.7.3/firebase-auth.js"></script>
+	<script async src="https://cdn.firebase.com/libs/firebaseui/3.5.1/firebaseui.js"></script>
+	<script async src="app.js"></script>
+	<script async src="buttons.js"></script>
+	<script async src="controller.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23500714-3"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'UA-23500714-3');
+	</script>
 	<!-- Javascript -->
 	<script type="text/javascript">
 	function view_pdf(file) {
@@ -35,7 +44,17 @@
 		document.getElementById('sign-in-div').style.display = 'none';
 		document.getElementById('authentication').style.display = 'block';
 	}
-</script>
+	</script>
+	<script type='application/ld+json'> 
+	{
+	"@context": "http://www.schema.org",
+	"@type": "person",
+	"name": "Jacky Ly",
+	"jobTitle": "Software Developer",
+	"url": "https://lyjacky11.me/",
+	"email": "jacky@lyjacky11.me"
+	}
+	</script>
 </head>
 	<body>
 		<div id="home"></div>
@@ -44,31 +63,31 @@
 			<!-- This "nav-menu" is hidden on mobile -->
 			<!-- Add the modifier "is-active" to display it on mobile -->
 			<div class="nav-left">
-				<a target="_blank" href="https://www.linkedin.com/in/lyjacky11/" class="nav-item">
+				<a target="_blank" href="https://www.linkedin.com/in/lyjacky11/" alt="LinkedIn" class="nav-item">
 					<span class="icon">
 						<!--<i class="fa fa-linkedin"></i>-->
 						<i class="fab fa-linkedin-in"></i>
 					</span>
 				</a>
-				<a target="_blank" href="https://www.instagram.com/lyjacky11/" class="nav-item">
+				<a target="_blank" href="https://www.instagram.com/lyjacky11/" alt="Instagram" class="nav-item">
 					<span class="icon">
 						<!--<i class="fa fa-instagram"></i>-->
 						<i class="fab fa-instagram"></i>
 					</span>
 				</a>
-				<a target="_blank" href="https://www.facebook.com/lyjacky11" class="nav-item">
+				<a target="_blank" href="https://www.facebook.com/lyjacky11" alt="Facebook" class="nav-item">
 					<span class="icon">
 						<!--<i class="fa fa-facebook"></i>-->
 						<i class="fab fa-facebook-f"></i>
 					</span>
 				</a>
-				<a target="_blank" href="http://github.com/lyjacky11" class="nav-item">
+				<a target="_blank" href="http://github.com/lyjacky11" alt="GitHub" class="nav-item">
 					<span class="icon">
 						<!--<i class="fa fa-github"></i>-->
 						<i class="fab fa-github"></i>
 					</span>
 				</a>
-				<a target="_blank" href="https://www.youtube.com/user/LyJacky" class="nav-item">
+				<a target="_blank" href="https://www.youtube.com/user/LyJacky" alt="YouTube" class="nav-item">
 					<span class="icon">
 						<!--<i class="fa fa-youtube"></i>-->
 						<i class="fab fa-youtube"></i>
@@ -96,13 +115,13 @@
 		<!-- About Me -->
 		<section class="section section-1">
 			<div class="container has-text-centered">
-				<a onclick="document.getElementById('about').scrollIntoView()"><img class="avatar popup" src="assets/img/profile.png"></a>
+				<a onclick="document.getElementById('about').scrollIntoView()"><img title="Avatar" class="avatar popup" src="assets/img/profile.png" alt="Avatar"></a>
 				<br></br>
 				<h1 class="title name"><b>Jacky Ly</b></h1>
 				<h1 class="title name">Software Developer | YouTuber</h1>
 				<div id="about"></div>
-				<a class="github-button" href="https://github.com/lyjacky11" data-size="large" aria-label="Follow @lyjacky11 on GitHub">Follow @lyjacky11</a> &emsp;
-				<a target="_blank" href="https://www.youtube.com/subscription_center?add_user=LyJacky"><img class="yt-sub popup" style="width: 115px; height: 31px;" src="assets/img/subscribe.png"></a>
+				<a class="github-button" href="https://github.com/lyjacky11" alt="GitHub" data-size="large" aria-label="Follow @lyjacky11 on GitHub">Follow @lyjacky11</a> &emsp;
+				<a target="_blank" href="https://www.youtube.com/subscription_center?add_user=LyJacky" alt="Subscribe"><img class="yt-sub popup" style="width: 115px; height: 31px;" title="Subscribe" src="assets/img/subscribe.png" alt="Subscribe"></a>
 			</div>
 
 			<div class="container">
@@ -135,7 +154,7 @@
 					<div id="user-signed-in" class="hidden">
 						<div id="user-info">
 							<div id="photo-container" class="popup">
-							<img id="photo"></img>
+							<img title="Profile Picture" id="photo" alt="Photo"></img>
 							</div>
 							<br>
 							<div id="name"></div>
@@ -174,7 +193,7 @@
 							<article>
 								<div>
 									<figure class="image project-figure popup">
-										<a target="_blank" href="https://timesheet.lyjacky11.me/"><img src="assets/img/tv-banner.jpg" alt="Image"></a>
+										<a target="_blank" href="https://timesheet.lyjacky11.me/"><img title="Timesheets Logo" src="assets/img/tv-banner.jpg" alt="Logo"></a>
 										<!--<a target="_blank" href="https://github.com/lyjacky11/SupremeSafety"><img src="assets/img/supreme-robotics.png" alt="Image"></a>-->
 									</figure>
 								</div>
@@ -182,7 +201,7 @@
 									<p align="center">
 										<b>Time Sheet Calculator</b>
 										<br></br>
-										<a href='https://go.lyjacky11.me/timesheet' target="_blank"><img class="popup" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' width="175px"/></a>
+										<a href='https://go.lyjacky11.me/timesheet' target="_blank"><img class="popup" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' title="Google Play" width="175px"/></a>
 										<h6 align="center">Google Play and the Google Play<br>logo are trademarks of Google LLC.</h6>
 									</p>
 								</div>
@@ -202,7 +221,7 @@
 									<p align="center">
 										<b>Day In The Life Of A<br>Computer Science Student!</b>
 										<br></br>
-										<a href="https://www.youtube.com/watch?v=y928xSHYeCw" target="_blank"><img class="popup" alt="Watch on YouTube" src="assets/img/yt_logo.png" width="125px" style="margin: 9px;"/></a>
+										<a href="https://www.youtube.com/watch?v=y928xSHYeCw" target="_blank"><img class="popup" alt="Watch on YouTube" src="assets/img/yt_logo.png" title="Watch on YouTube" width="125px" style="margin: 9px;"/></a>
 										<h6 align="center">YouTube and the YouTube<br>logo are trademarks of Google LLC.</h6>
 									</p>
 								</div>
@@ -222,7 +241,7 @@
 				</div>
 				<div class="social-container columns">
 					<div class="column has-text-centered popup">
-						<a target="_blank" id="resume-pdf" onclick="view_pdf('assets/jacky-ly-resume.pdf')"><img src="assets/img/resume.png"></a>
+						<a target="_blank" id="resume-pdf" onclick="view_pdf('assets/jacky-ly-resume.pdf')"><img title="Resume" src="assets/img/resume.png" alt="Resume"></a>
 					</div>
 				</div>
 			</div>
@@ -239,13 +258,13 @@
 				<br></br>
 				<div class="social-container columns">
 					<div class="column is-4 has-text-centered popup">
-						<a target="_blank" href="https://www.linkedin.com/in/lyjacky11/"><img class="social-icons" src="assets/img/linkedin.png"></a>
+						<a target="_blank" href="https://www.linkedin.com/in/lyjacky11/"><img class="social-icons" title="LinkedIn" src="assets/img/linkedin.png" alt="LinkedIn"></a>
 					</div>
 					<div class="column is-4 has-text-centered popup">
-						<a target="_blank" href="https://www.instagram.com/lyjacky11/"><img class="social-icons" src="assets/img/instagram.png"></a>
+						<a target="_blank" href="https://www.instagram.com/lyjacky11/"><img class="social-icons" title="Instagram" src="assets/img/instagram.png" alt="Instagram"></a>
 					</div>
 					<div class="column is-4 has-text-centered popup">
-						<a target="_blank" href="https://www.facebook.com/lyjacky11"><img class="social-icons" src="assets/img/facebook.png"></a>
+						<a target="_blank" href="https://www.facebook.com/lyjacky11"><img class="social-icons" title="Facebook" src="assets/img/facebook.png" alt="Facebook"></a>
 					</div>
 				</div>
 			</div>
@@ -253,10 +272,8 @@
 
 		<!-- Footer -->
 		<section class="section-5 has-text-centered container">
-			<a target="_blank" href="https://status.lyjacky11.me/">Site Status</a> &emsp;
-			<a target="_blank" href="sitemap.xml">Sitemap</a>
+			<!-- <a target="_blank" href="https://status.lyjacky11.me/">Site Status</a> &emsp; -->
 			<h5>Email: <a target="_blank" href="mailto:jacky@lyjacky11.me">jacky@lyjacky11.me</a></h5>
-			<br>
 			<h6 align="center">Copyright © 2019 Jacky Ly.</h6>
 		</section>
 	</body>
