@@ -1,283 +1,272 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Jacky Ly | CS Co-op Student</title>
-	<!-- CSS files -->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css">
-	<!-- <link rel="stylesheet" type="text/css" href="https://cdn.firebase.com/libs/firebaseui/3.5.1/firebaseui.css"> -->
-	<link rel="stylesheet" type="text/css" href="assets/style.css">
-	<link rel="icon" type="image/x-icon" href="assets/img/favicon_round.ico">
-	<meta name="author" content="Jacky Ly">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
-	<!-- Scripts  -->
-	<script src="https://kit.fontawesome.com/e91efeadf2.js" crossorigin="anonymous"></script>
-	<!-- <script async src="https://www.gstatic.com/firebasejs/5.7.3/firebase-app.js"/> -->
-	<!-- <script async src="https://www.gstatic.com/firebasejs/5.7.3/firebase-auth.js"/> -->
-	<!-- <script async src="https://cdn.firebase.com/libs/firebaseui/3.5.1/firebaseui.js"/> -->
-	<!-- <script async src="assets/app.js"></script> -->
-	<script async src="assets/buttons.js"></script>
-	<script src="assets/controller.js"></script>
-	
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23500714-3"></script>
-	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){dataLayer.push(arguments);}
-	gtag('js', new Date());
-	gtag('config', 'UA-23500714-3');
-	</script>
-	
-	<!-- Javascript -->
-	<script type="text/javascript">
-	function view_pdf(file) {
-	if (screen.width <= 768) {
-			gdocs = "https://docs.google.com/viewer?url=" + location.href;
-			document.getElementById('resume-pdf').href = gdocs + file + "&embedded=true";
-		}
-		else {
-			document.getElementById('resume-pdf').href = file;
-		}
-	}
-	function login_oauth() {
-		document.getElementById('sign-in-div').style.display = 'none';
-		document.getElementById('authentication').style.display = 'block';
-	}
-	</script>
-	<script type='application/ld+json'> 
-	{
-	"@context": "http://www.schema.org",
-	"@type": "person",
-	"name": "Jacky Ly",
-	"jobTitle": "Co-op Student",
-	"url": "https://JackyLy.ca/",
-	"email": "jacky.ly@ryerson.ca"
-	}
-	</script>
-
-</head>
-	<body>
-		<div id="home"></div>
-		<!-- Navbar -->
-		<nav class="sticky nav container">
-			<!-- This "nav-menu" is hidden on mobile -->
-			<!-- Add the modifier "is-active" to display it on mobile -->
-			<div class="nav-left">
-				<a target="_blank" href="https://www.linkedin.com/in/lyjacky11/" alt="LinkedIn" class="nav-item">
-					<span class="icon">
-						<!--<i class="fa fa-linkedin"></i>-->
-						<i class="fab fa-linkedin"></i>
-					</span>
-				</a>
-				<a target="_blank" href="https://www.instagram.com/lyjacky11/" alt="Instagram" class="nav-item">
-					<span class="icon">
-						<!--<i class="fa fa-instagram"></i>-->
-						<i class="fab fa-instagram"></i>
-					</span>
-				</a>
-				<a target="_blank" href="https://www.facebook.com/lyjacky11" alt="Facebook" class="nav-item">
-					<span class="icon">
-						<!--<i class="fa fa-facebook"></i>-->
-						<i class="fab fa-facebook"></i>
-					</span>
-				</a>
-				<a target="_blank" href="http://github.com/lyjacky11" alt="GitHub" class="nav-item">
-					<span class="icon">
-						<!--<i class="fa fa-github"></i>-->
-						<i class="fab fa-github"></i>
-					</span>
-				</a>
-				<a target="_blank" href="https://www.youtube.com/user/LyJacky" alt="YouTube" class="nav-item">
-					<span class="icon">
-						<!--<i class="fa fa-youtube"></i>-->
-						<i class="fab fa-youtube"></i>
-					</span>
-				</a>
-			</div>
-
-			<div class="nav-right nav-menu">
-				<a class="nav-item" onclick="document.getElementById('home').scrollIntoView()"><b>Home</b></a>
-				<a class="nav-item" onclick="document.getElementById('about').scrollIntoView()"><b>About</b></a>
-				<a class="nav-item" onclick="document.getElementById('projects').scrollIntoView()"><b>Projects</b></a>
-				<a class="nav-item" onclick="document.getElementById('resume').scrollIntoView()"><b>Resume</b></a>
-				<a class="nav-item" onclick="document.getElementById('social').scrollIntoView()"><b>Social</b></a>
-			</div>
-
-			<!-- This "nav-toggle" hamburger menu is only visible on mobile -->
-			<!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
-			<span class="nav-toggle">
-				<span></span>
-				<span></span>
-				<span></span>
-			</span>
-		</nav>
-
-		<!-- About Me -->
-		<section class="section section-1">
-			<div class="container has-text-centered">
-				<a onclick="document.getElementById('about').scrollIntoView()"><img title="Avatar" class="avatar popup" src="assets/img/profile.png" alt="Avatar"></a>
-				<br></br>
-				<h1 class="title name"><b>Jacky Ly</b></h1>
-				<h1 class="title name">Computer Science Co-op | Ryerson University</h1>
-				<div id="about"></div>
-				<a class="github-button" href="https://github.com/lyjacky11" alt="GitHub" data-size="large" aria-label="Follow @lyjacky11 on GitHub">Follow @lyjacky11</a> &emsp;
-				<a target="_blank" href="https://www.youtube.com/subscription_center?add_user=LyJacky" alt="Subscribe"><img class="yt-sub popup" style="width: 115px; height: 31px;" title="Subscribe" src="assets/img/subscribe.png" alt="Subscribe"></a>
-			</div>
-			<div class="container">
-				<br>
-				<div class="has-text-centered">
-					<h3 class="title is-3">About Me</h3>
-				</div>
-			<div class="container"></br>
-				<p class="intro">
-					I am an undergraduate co-op student majoring in computer science at Ryerson University. I can write code in Python, Java, HTML/CSS, and JavaScript.
-					Most of my projects are available on my <a href="https://github.com/lyjacky11" alt="GitHub">GitHub</a> profile.
-					I also run a <a href="https://www.youtube.com/user/LyJacky" alt="YouTube">YouTube channel</a> where I edit and upload different types of content such as vlogs.
-					To learn more about me, feel free to check out my <a onclick="document.getElementById('resume').scrollIntoView()" alt="Resume">resume</a> and my
-					<a onclick="document.getElementById('social').scrollIntoView()" alt="Social"> social networks</a> below!
-				</p>
-			</div>
-		</section>
-
-		<!-- Login/Signup
-		<div id="sign-in-div" style="text-align:center" class="hidden">
-		<button id="sign-in" class="auth-btn popup" onclick="login_oauth()"><i class="fas fa-sign-in-alt"></i> Log In / Sign Up</button>
-		</div>
-		-->
-
-		<!-- Firebase Authentication
-		<div id="authentication" class="hidden" style="text-align:center">
-			<div id="firebaseui-auth-container"></div>
-			<div id="loading">Loading...</div>
-			<div id="loaded" class="hidden">
-				<div id="main">
-					<div id="user-signed-in" class="hidden">
-						<div id="user-info">
-							<div id="photo-container" class="popup">
-							<img title="Profile Picture" id="photo" alt="Photo"></img>
-							</div>
-							<br>
-							<div id="name"></div>
-							<div id="email"></div>
-							<div id="phone"></div>
-							<div id="is-new-user"></div>
-							<div class="clearfix"></div>
-						</div>
-						<br>
-						<button id="sign-out" class="auth-btn popup"><i class="fas fa-sign-out-alt"></i> Sign Out</button>
-						<button id="delete-account" class="auth-btn popup"><i class="fas fa-user-minus"></i> Delete Account</button>
-						</br>
-					</div>
-				</div>
-			</div>
-			<br>
-			<div id="user-signed-out" class="hidden">
-				<h4>You are signed out.</h4>
-			</div>
-			</br>
-		</div>
-		-->
-		
-		<!-- Projects -->
-		<div id="projects"></div>
-		<br>
-		<section class="section section-2">
-			<div class="container">
-				<div class="has-text-centered">
-					<h3 class="title is-3">Projects</h3>
-				</div>
-
-				<div class="columns is-multiline is-desktop">
-					<!-- Project 1 -->
-					<div class="column">
-						<div class="box project-text">
-							<article>
-								<div>
-									<figure class="image project-figure popup">
-										<a target="_blank" href="https://timesheet.lyjacky11.me/"><img title="Timesheets Logo" src="assets/img/tv-banner.jpg" alt="Logo"></a>
-										<!--<a target="_blank" href="https://github.com/lyjacky11/SupremeSafety"><img src="assets/img/supreme-robotics.png" alt="Image"></a>-->
-									</figure>
-								</div>
-								<div>
-									<p align="center">
-										<b>Time Sheet Calculator</b>
-										<br></br>
-										<a href='https://go.lyjacky11.me/timesheet' target="_blank"><img class="popup" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' title="Google Play" width="175px"/></a>
-										<h6 align="center">Google Play and the Google Play<br>logo are trademarks of Google LLC.</h6>
-									</p>
-								</div>
-							</article>
-						</div>
-					</div>
-					<!-- Project 2 -->
-					<div class="column">
-						<div class="box project-text">
-							<article>
-								<div>
-									<figure class="image project-figure popup">
-										<iframe width="290" height="163" src="https://www.youtube.com/embed/y928xSHYeCw" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-									</figure>
-								</div>
-								<div>
-									<p align="center">
-										<b>Day In The Life Of A<br>Computer Science Student!</b>
-										<br></br>
-										<a href="https://www.youtube.com/watch?v=y928xSHYeCw" target="_blank"><img class="popup" alt="Watch on YouTube" src="assets/img/yt_logo.png" title="Watch on YouTube" width="125px" style="margin: 9px;"/></a>
-										<h6 align="center">YouTube and the YouTube<br>logo are trademarks of Google LLC.</h6>
-									</p>
-								</div>
-							</article>
-						</div>
-					</div>
-				</div>
-			</div>
-		<div id="resume"></div>
-		</section>
-		<!-- Resume -->
-		<section class="section section-3">
-			<br>
-			<div class="container">
-				<div class="has-text-centered">
-					<h3 class="title is-3">Resume</h3>
-				</div>
-				<div class="social-container columns">
-					<div class="column has-text-centered popup">
-						<a target="_blank" id="resume-pdf" onclick="view_pdf('assets/jacky-ly-resume.pdf')"><img title="Resume" src="assets/img/resume.png" alt="Resume"></a>
-					</div>
-				</div>
-			</div>
-	 </section>
-
-		<!-- Social -->
-		<div id="social"></div>
-		<section class="section section-4">
-			<br>
-			<div class="container">
-				<div class="has-text-centered">
-					<h3 class="title is-3">Let's Connect!</h3>
-				</div>
-				<br></br>
-				<div class="social-container columns">
-					<div class="column is-4 has-text-centered popup">
-						<a target="_blank" href="https://www.linkedin.com/in/lyjacky11/" alt="LinkedIn"><img class="social-icons" title="LinkedIn" src="assets/img/linkedin.png" alt="LinkedIn"></a>
-					</div>
-					<div class="column is-4 has-text-centered popup">
-						<a target="_blank" href="https://www.instagram.com/lyjacky11/" alt="Instagram"><img class="social-icons" title="Instagram" src="assets/img/instagram.png" alt="Instagram"></a>
-					</div>
-					<div class="column is-4 has-text-centered popup">
-						<a target="_blank" href="https://www.facebook.com/lyjacky11" alt="Facebook"><img class="social-icons" title="Facebook" src="assets/img/fb-logo.png" alt="Facebook"></a>
-					</div>
-				</div>
-			</div>
-		</section>
-
-		<!-- Footer -->
-		<section class="section-5 has-text-centered container">
-			<!-- <a target="_blank" href="https://status.lyjacky11.me/">Site Status</a> &emsp; -->
-			<h5>Email: <a target="_blank" href="mailto:jacky.ly@ryerson.ca">jacky.ly@ryerson.ca</a></h5>
-			<h6 align="center">Copyright © 2019 <a href="https://bio.lyjacky11.me/" alt="Jacky Ly">Jacky Ly</a>.</h6>
-		</section>
-	</body>
+<html lang="en">
+   <head>
+      <title>Jacky Ly | CS Co-op Student</title>
+      <!-- CSS files -->
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css">
+      <!-- <link rel="stylesheet" type="text/css" href="https://cdn.firebase.com/libs/firebaseui/3.5.1/firebaseui.css"> -->
+      <link rel="stylesheet" type="text/css" href="assets/style.css">
+      <link rel="icon" type="image/x-icon" href="assets/img/favicon_round.ico">
+      <meta name="author" content="Jacky Ly">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- Scripts  -->
+      <script src="https://kit.fontawesome.com/e91efeadf2.js" crossorigin="anonymous"></script>
+      <!-- <script async src="https://www.gstatic.com/firebasejs/5.7.3/firebase-app.js"/> -->
+      <!-- <script async src="https://www.gstatic.com/firebasejs/5.7.3/firebase-auth.js"/> -->
+      <!-- <script async src="https://cdn.firebase.com/libs/firebaseui/3.5.1/firebaseui.js"/> -->
+      <!-- <script async src="assets/app.js"></script> -->
+      <script async src="assets/buttons.js"></script>
+      <script src="assets/controller.js"></script>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23500714-3"></script>
+      <script>
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+         gtag('config', 'UA-23500714-3');
+      </script>
+      <!-- Javascript -->
+      <script>
+         function view_pdf(file) {
+         if (screen.width <= 768) {
+         		gdocs = "https://docs.google.com/viewer?url=" + location.href;
+         		document.getElementById('resume-pdf').href = gdocs + file + "&embedded=true";
+         	}
+         	else {
+         		document.getElementById('resume-pdf').href = file;
+         	}
+         }
+         function login_oauth() {
+         	document.getElementById('sign-in-div').style.display = 'none';
+         	document.getElementById('authentication').style.display = 'block';
+         }
+      </script>
+      <script type='application/ld+json'> 
+         {
+         "@context": "http://www.schema.org",
+         "@type": "person",
+         "name": "Jacky Ly",
+         "jobTitle": "Co-op Student",
+         "url": "https://JackyLy.ca/",
+         "email": "jacky.ly@ryerson.ca"
+         }
+      </script>
+   </head>
+   <body>
+      <div id="home"></div>
+      <!-- Navbar -->
+      <nav class="sticky nav container">
+         <!-- This "nav-menu" is hidden on mobile -->
+         <!-- Add the modifier "is-active" to display it on mobile -->
+         <div class="nav-left">
+            <a target="_blank" href="https://www.linkedin.com/in/lyjacky11/" class="nav-item">
+               <span class="icon">
+                  <!--<i class="fa fa-linkedin"></i>-->
+                  <i class="fab fa-linkedin"></i>
+               </span>
+            </a>
+            <a target="_blank" href="https://www.instagram.com/lyjacky11/" class="nav-item">
+               <span class="icon">
+                  <!--<i class="fa fa-instagram"></i>-->
+                  <i class="fab fa-instagram"></i>
+               </span>
+            </a>
+            <a target="_blank" href="https://www.facebook.com/lyjacky11" class="nav-item">
+               <span class="icon">
+                  <!--<i class="fa fa-facebook"></i>-->
+                  <i class="fab fa-facebook"></i>
+               </span>
+            </a>
+            <a target="_blank" href="http://github.com/lyjacky11" class="nav-item">
+               <span class="icon">
+                  <!--<i class="fa fa-github"></i>-->
+                  <i class="fab fa-github"></i>
+               </span>
+            </a>
+            <a target="_blank" href="https://www.youtube.com/user/LyJacky" class="nav-item">
+               <span class="icon">
+                  <!--<i class="fa fa-youtube"></i>-->
+                  <i class="fab fa-youtube"></i>
+               </span>
+            </a>
+         </div>
+         <div class="nav-right nav-menu">
+            <a class="nav-item" onclick="document.getElementById('home').scrollIntoView()"><b>Home</b></a>
+            <a class="nav-item" onclick="document.getElementById('about').scrollIntoView()"><b>About</b></a>
+            <a class="nav-item" onclick="document.getElementById('projects').scrollIntoView()"><b>Projects</b></a>
+            <a class="nav-item" onclick="document.getElementById('resume').scrollIntoView()"><b>Resume</b></a>
+            <a class="nav-item" onclick="document.getElementById('social').scrollIntoView()"><b>Social</b></a>
+         </div>
+         <!-- This "nav-toggle" hamburger menu is only visible on mobile -->
+         <!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
+         <span class="nav-toggle">
+         <span></span>
+         <span></span>
+         <span></span>
+         </span>
+      </nav>
+      <!-- About Me -->
+      <section class="section section-1">
+         <div class="container has-text-centered">
+            <a onclick="document.getElementById('about').scrollIntoView()"><img title="Avatar" class="avatar popup" src="assets/img/profile.png" alt="Avatar"></a>
+            <br><br>
+            <h1 class="title name"><b>Jacky Ly</b></h1>
+            <h1 class="title name">Computer Science Co-op | Ryerson University</h1>
+            <div id="about"></div>
+            <a class="github-button" href="https://github.com/lyjacky11" data-size="large" aria-label="Follow @lyjacky11 on GitHub">Follow @lyjacky11</a> &emsp;
+            <a target="_blank" href="https://www.youtube.com/subscription_center?add_user=LyJacky"><img class="yt-sub popup" style="width: 115px; height: 31px;" title="Subscribe" src="assets/img/subscribe.png" alt="Subscribe"/></a>
+         </div>
+         <div class="container">
+            <br>
+            <div class="has-text-centered">
+               <h3 class="title is-3">About Me</h3>
+            </div>
+            <div class="container">
+               <br>
+               <p class="intro">
+                  I am an undergraduate co-op student majoring in computer science at Ryerson University. I can write code in Python, Java, HTML/CSS, and JavaScript.
+                  Most of my projects are available on my <a href="https://github.com/lyjacky11">GitHub</a> profile.
+                  I also run a <a href="https://www.youtube.com/user/LyJacky">YouTube channel</a> where I edit and upload different types of content such as vlogs.
+                  To learn more about me, feel free to check out my <a onclick="document.getElementById('resume').scrollIntoView()">resume</a> and my
+                  <a onclick="document.getElementById('social').scrollIntoView()"> social networks</a> below!
+               </p>
+            </div>
+         </div>
+      </section>
+      <!-- Login/Signup
+         <div id="sign-in-div" style="text-align:center" class="hidden">
+         <button id="sign-in" class="auth-btn popup" onclick="login_oauth()"><i class="fas fa-sign-in-alt"></i> Log In / Sign Up</button>
+         </div>
+         -->
+      <!-- Firebase Authentication
+         <div id="authentication" class="hidden" style="text-align:center">
+         	<div id="firebaseui-auth-container"></div>
+         	<div id="loading">Loading...</div>
+         	<div id="loaded" class="hidden">
+         		<div id="main">
+         			<div id="user-signed-in" class="hidden">
+         				<div id="user-info">
+         					<div id="photo-container" class="popup">
+         					<img title="Profile Picture" id="photo" alt="Photo"></img>
+         					</div>
+         					<br>
+         					<div id="name"></div>
+         					<div id="email"></div>
+         					<div id="phone"></div>
+         					<div id="is-new-user"></div>
+         					<div class="clearfix"></div>
+         				</div>
+         				<br>
+         				<button id="sign-out" class="auth-btn popup"><i class="fas fa-sign-out-alt"></i> Sign Out</button>
+         				<button id="delete-account" class="auth-btn popup"><i class="fas fa-user-minus"></i> Delete Account</button>
+         				</br>
+         			</div>
+         		</div>
+         	</div>
+         	<br>
+         	<div id="user-signed-out" class="hidden">
+         		<h4>You are signed out.</h4>
+         	</div>
+         	</br>
+         </div>
+         -->
+      <!-- Projects -->
+      <div id="projects"></div>
+      <br>
+      <section class="section section-2">
+         <div class="container">
+            <div class="has-text-centered">
+               <h3 class="title is-3">Projects</h3>
+            </div>
+            <div class="columns is-multiline is-desktop">
+               <!-- Project 1 -->
+               <div class="column">
+                  <div class="box project-text">
+                     <article>
+                        <div>
+                           <figure class="image project-figure popup">
+                              <a target="_blank" href="https://timesheet.lyjacky11.me/"><img title="Timesheets Logo" src="assets/img/tv-banner.jpg" alt="Logo"></a>
+                              <!--<a target="_blank" href="https://github.com/lyjacky11/SupremeSafety"><img src="assets/img/supreme-robotics.png" alt="Image"></a>-->
+                           </figure>
+                        </div>
+                        <div>
+                           <div class="projects_div">
+                              <b>Time Sheet Calculator</b>
+                              <br><br>
+                              <a href='https://go.lyjacky11.me/timesheet' target="_blank"><img class="popup" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' title="Google Play" width="175"/></a>
+                              <h6>Google Play and the Google Play<br>logo are trademarks of Google LLC.</h6>
+                           </div>
+                        </div>
+                     </article>
+                  </div>
+               </div>
+               <!-- Project 2 -->
+               <div class="column">
+                  <div class="box project-text">
+                     <article>
+                        <div>
+                           <figure class="image project-figure popup">
+                              <iframe width="290" height="163" src="https://www.youtube.com/embed/y928xSHYeCw" style="border: 0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                           </figure>
+                        </div>
+                        <div>
+                           <div class="projects_div">
+                              <b>Day In The Life Of A<br>Computer Science Student!</b>
+                              <br><br>
+                              <a href="https://www.youtube.com/watch?v=y928xSHYeCw" target="_blank"><img class="popup" alt="Watch on YouTube" src="assets/img/yt_logo.png" title="Watch on YouTube" width="125" style="margin: 9px;"/></a>
+                              <h6>YouTube and the YouTube<br>logo are trademarks of Google LLC.</h6>
+                           </div>
+                        </div>
+                     </article>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div id="resume"></div>
+      </section>
+      <!-- Resume -->
+      <section class="section section-3">
+         <br>
+         <div class="container">
+            <div class="has-text-centered">
+               <h3 class="title is-3">Resume</h3>
+            </div>
+            <div class="social-container columns">
+               <div class="column has-text-centered popup">
+                  <a href="#" target="_blank" id="resume-pdf" onclick="view_pdf('assets/jacky-ly-resume.pdf')"><img title="Resume" src="assets/img/resume.png" alt="Resume"></a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Social -->
+      <div id="social"></div>
+      <section class="section section-4">
+         <br>
+         <div class="container">
+            <div class="has-text-centered">
+               <h3 class="title is-3">Let's Connect!</h3>
+            </div>
+            <br><br>
+            <div class="social-container columns">
+               <div class="column is-4 has-text-centered popup">
+                  <a target="_blank" href="https://www.linkedin.com/in/lyjacky11/"><img class="social-icons" title="LinkedIn" src="assets/img/linkedin.png" alt="LinkedIn"></a>
+               </div>
+               <div class="column is-4 has-text-centered popup">
+                  <a target="_blank" href="https://www.instagram.com/lyjacky11/"><img class="social-icons" title="Instagram" src="assets/img/instagram.png" alt="Instagram"></a>
+               </div>
+               <div class="column is-4 has-text-centered popup">
+                  <a target="_blank" href="https://www.facebook.com/lyjacky11"><img class="social-icons" title="Facebook" src="assets/img/fb-logo.png" alt="Facebook"></a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!-- Footer -->
+      <section class="section-5 has-text-centered container">
+         <!-- <a target="_blank" href="https://status.lyjacky11.me/">Site Status</a> &emsp; -->
+         <h5>Email: <a target="_blank" href="mailto:jacky.ly@ryerson.ca">jacky.ly@ryerson.ca</a></h5>
+         <h6>Copyright © 2019 <a href="https://bio.lyjacky11.me/">Jacky Ly</a>.</h6>
+      </section>
+   </body>
 </html>
