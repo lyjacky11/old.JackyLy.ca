@@ -2,7 +2,7 @@ html, body {
      font-family: Raleway;
      font-size:16px;
      color: #dfdfdf;
-     background-color: #063647;
+     background-color: #002f6c;
      scroll-behavior: smooth;
 }
  ::-webkit-scrollbar {
@@ -36,23 +36,23 @@ html, body {
      display: none;
 }
  .section-1 {
-     background: #063647;
+     background: #002f6c;
 }
  .section-2 {
-     background-color: #052D3D;
+     background-color: #002671;
 }
  .section-3 {
-     background-color: #0E282E;
+     background-color: #002f6c;
 }
  .section-4 {
-     background-color: #063647;
+     background-color: #002671;
 }
  .section-5 {
-     background-color: #063647;
+     background-color: #002671;
      padding: 0.2rem;
 }
  .sticky {
-     background: #063647;
+     background: #002f6c;
      position: sticky;
     /* Set the navbar to fixed position */
      top: 0;
@@ -134,7 +134,7 @@ html, body {
 }
  @media screen and (max-width: 768px) {
      .nav-menu {
-         background-color: #063647;
+         background-color: #002f6c;
     }
      .nav-toggle:hover {
          background-color: transparent;
