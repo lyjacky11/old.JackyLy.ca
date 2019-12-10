@@ -106,10 +106,23 @@ html, body {
      text-align: left;
      margin-bottom: 2rem;
 }
+
+.subtitle {
+     color: #fff;
+     text-align: left;
+	 font-size: 1.7em;
+	 padding-top: 1rem;
+}
+
  .name {
      color: #fff;
      text-align: center;
 }
+
+#ryerson {
+	font-size: 0.85em;
+}
+
  .intro {
      text-align: justify;
      width: 80%;
