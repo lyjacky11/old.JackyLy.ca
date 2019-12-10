@@ -5,8 +5,6 @@
 [![Uptime Robot ratio (30 days)](https://img.shields.io/uptimerobot/ratio/m780474906-2ca86ae1fe508c0d19bab0ff.svg?style=popout-square&label=30%20Days%20Uptime)](https://status.lyjacky11.me/)
 [![Github last commit date](https://img.shields.io/github/last-commit/lyjacky11/lyjacky11.me.svg?style=popout-square&label=Last%20Updated)](https://github.com/lyjacky11/lyjacky11.me/commits)  
 
-Jacky Ly | CS Co-op Student
-
-![GIF](http://umihi.co/thumbnailed-portfolio-websites/gifs/lyjacky11-lyjacky11.me.gif)
+Jacky Ly | Ryerson CS Co-op Student
 
 [https://JackyLy.ca/](https://JackyLy.ca/)
