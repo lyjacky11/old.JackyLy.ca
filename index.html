@@ -18,7 +18,7 @@
       <!-- <script async src="https://cdn.firebase.com/libs/firebaseui/3.5.1/firebaseui.js"/> -->
       <!-- <script async src="assets/app.js"></script> -->
       <script async src="assets/buttons.js"></script>
-      <script src="assets/controller.js"></script>
+      <!-- <script src="assets/controller.js"></script> -->
       <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23500714-3"></script>
       <script>
@@ -33,17 +33,24 @@
          if (screen.width <= 768) {
          		gdocs = "https://docs.google.com/viewer?url=" + location.href;
          		document.getElementById('resume-pdf').href = gdocs + file + "&embedded=true";
-         	}
-         	else {
+         	} else {
          		document.getElementById('resume-pdf').href = file;
-         	}
+         	 }
          }
+         /*
          function login_oauth() {
          	document.getElementById('sign-in-div').style.display = 'none';
          	document.getElementById('authentication').style.display = 'block';
          }
+         */
+         function openNav() {
+           document.getElementById("sideMenu").style.height = "45%";
+         }
+         function closeNav() {
+           document.getElementById("sideMenu").style.height = "0";
+         }
       </script>
-      <script type='application/ld+json'> 
+      <script type='application/ld+json'>
          {
          "@context": "http://www.schema.org",
          "@type": "person",
@@ -66,12 +73,12 @@
                   <i class="fab fa-linkedin"></i>
                </span>
             </a>
-			<a target="_blank" href="http://github.com/lyjacky11" class="nav-item">
+			      <a target="_blank" href="http://github.com/lyjacky11" class="nav-item">
                <span class="icon">
                   <i class="fab fa-github"></i>
                </span>
             </a>
-			<!--
+			      <!--
             <a target="_blank" href="https://www.instagram.com/lyjacky11/" class="nav-item">
                <span class="icon">
                   <i class="fab fa-instagram"></i>
@@ -82,29 +89,35 @@
                   <i class="fab fa-facebook"></i>
                </span>
             </a>
-			<a target="_blank" href="https://www.youtube.com/user/LyJacky" class="nav-item">
+			      <a target="_blank" href="https://www.youtube.com/user/LyJacky" class="nav-item">
                <span class="icon">
                   <i class="fab fa-youtube"></i>
                </span>
-			-->
             </a>
+            -->
          </div>
-         <div class="nav-right nav-menu">
-            <a class="nav-item" onclick="document.getElementById('home').scrollIntoView()"><b>Home</b></a>
-            <a class="nav-item" onclick="document.getElementById('about').scrollIntoView()"><b>About</b></a>
-            <a class="nav-item" onclick="document.getElementById('projects').scrollIntoView()"><b>Projects</b></a>
-            <a class="nav-item" onclick="document.getElementById('resume').scrollIntoView()"><b>Resume</b></a>
-            <a class="nav-item" onclick="document.getElementById('social').scrollIntoView()"><b>Social</b></a>
+
+         <div id="sideMenu" class="nav-right sidenav">
+           <div id="navLinks">
+              <a class="closebtn" href="javascript:void(0)" onclick="closeNav()">&times;</a>
+              <a class="nav-item" onclick="closeNav(); document.getElementById('home').scrollIntoView();"><b>Home</b></a>
+              <a class="nav-item" onclick="closeNav(); document.getElementById('about').scrollIntoView();"><b>About</b></a>
+              <a class="nav-item" onclick="closeNav(); document.getElementById('projects').scrollIntoView();"><b>Projects</b></a>
+              <a class="nav-item" onclick="closeNav(); document.getElementById('resume').scrollIntoView();"><b>Resume</b></a>
+              <a class="nav-item" onclick="closeNav(); document.getElementById('social').scrollIntoView();"><b>Social</b></a>
+           </div>
          </div>
+         <i id="bars" class="fas fa-bars" onclick="openNav()"></i>
          <!-- This "nav-toggle" hamburger menu is only visible on mobile -->
          <!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
-         <span class="nav-toggle">
+         <!-- <span class="nav-toggle">
          <span></span>
          <span></span>
          <span></span>
          </span>
+       -->
       </nav>
-	  
+
       <!-- About Me -->
       <section class="section section-1">
          <div class="container has-text-centered">
@@ -134,7 +147,7 @@
             </div>
          </div>
       </section>
-	  
+
       <!-- Login/Signup
          <div id="sign-in-div" style="text-align:center" class="hidden">
          <button id="sign-in" class="auth-btn popup" onclick="login_oauth()"><i class="fas fa-sign-in-alt"></i> Log In / Sign Up</button>
@@ -172,7 +185,7 @@
          	</br>
          </div>
          -->
-		 
+
       <!-- Projects -->
       <div id="projects"></div>
       <br>
@@ -182,14 +195,14 @@
                <h3 class="title is-3">Projects</h3>
             </div>
             <div class="columns is-multiline is-desktop">
-			
+
                <!-- Project 1 -->
                <div class="column">
                   <div class="box project-text">
                      <article>
                         <div>
-                           <figure class="image project-figure popup">
-                              <a target="_blank" href="https://timesheet.jackyly.ca/"><img title="Timesheets Logo" src="assets/img/timesheets.jpg" alt="Logo"></a>
+                           <figure class="image project-figure">
+                              <a target="_blank" href="https://timesheet.jackyly.ca/"><img title="Timesheets Logo" class="popup" src="assets/img/timesheets.jpg" alt="Logo"></a>
                            </figure>
                         </div>
                         <div>
@@ -203,14 +216,14 @@
                      </article>
                   </div>
                </div>
-			   
+
                <!-- Project 2 -->
                <div class="column">
                   <div class="box project-text">
                      <article>
                         <div>
-                           <figure class="image project-figure popup">
-                              <a target="_blank" href="http://cps530.jackyly.ca/"><img title="Material UI/React" src="assets/img/material-ui.png" alt="Logo"></a>
+                           <figure class="image project-figure">
+                              <a target="_blank" href="http://cps530.jackyly.ca/"><img title="Material UI/React" class="popup" src="assets/img/material-ui.png" alt="Logo"></a>
                            </figure>
                         </div>
                         <div>
@@ -224,7 +237,7 @@
                      </article>
                   </div>
                </div>
-			   
+
 			   <!-- Project 3
                <div class="column">
                   <div class="box project-text">
@@ -250,7 +263,7 @@
          </div>
          <div id="resume"></div>
       </section>
-	  
+
       <!-- Resume -->
       <section class="section section-3">
          <br>
@@ -259,13 +272,13 @@
                <h3 class="title is-3">Resume/CV</h3>
             </div>
             <div class="social-container columns">
-               <div class="column has-text-centered popup">
-                  <a href="#" target="_blank" id="resume-pdf" onclick="view_pdf('assets/jacky-ly-resume.pdf')"><img title="Resume" src="assets/img/resume.png" alt="Resume"></a>
+               <div class="column has-text-centered">
+                  <a href="#" target="_blank" id="resume-pdf" onclick="view_pdf('assets/jacky-ly-resume.pdf')"><img title="Resume" class="popup" src="assets/img/resume.png" alt="Resume"></a>
                </div>
             </div>
          </div>
       </section>
-	  
+
       <!-- Social -->
       <div id="social"></div>
       <section class="section section-4">
@@ -276,13 +289,13 @@
             </div>
             <br><br>
             <div class="social-container columns">
-               <div class="column has-text-centered popup">
-                  <a target="_blank" href="https://www.linkedin.com/in/lyjacky11/"><img class="social-icons" title="LinkedIn" src="assets/img/linkedin.png" alt="LinkedIn"></a>
+               <div class="column has-text-centered">
+                  <a target="_blank" href="https://www.linkedin.com/in/lyjacky11/"><img class="social-icons popup" title="LinkedIn" src="assets/img/linkedin.png" alt="LinkedIn"></a>
                </div>
-               <div class="column has-text-centered popup">
-                  <a target="_blank" href="https://github.com/lyjacky11"><img class="social-icons" title="GitHub" src="assets/img/github.png" alt="GitHub"></a>
+               <div class="column has-text-centered">
+                  <a target="_blank" href="https://github.com/lyjacky11"><img class="social-icons popup" title="GitHub" src="assets/img/github.png" alt="GitHub"></a>
                </div>
-			   <!-- <div class="column is-4 has-text-centered popup">
+			            <!-- <div class="column is-4 has-text-centered popup">
                   <a target="_blank" href="https://www.instagram.com/lyjacky11/"><img class="social-icons" title="Instagram" src="assets/img/instagram.png" alt="Instagram"></a>
                </div> -->
                <!-- <div class="column is-4 has-text-centered popup">
@@ -291,7 +304,7 @@
             </div>
          </div>
       </section>
-	  
+
       <!-- Footer -->
       <section class="section section-5">
 		 <div class="container">
@@ -301,6 +314,7 @@
 				<h6>© Copyright 2018-<script>document.write(new Date().getFullYear())</script>, Jacky Ly.</h6>
 			</div>
 		</div>
+      <br>
       </section>
    </body>
 </html>
