@@ -171,10 +171,12 @@ html, body {
      z-index: 1;
      top: 0;
      left: 0;
-     background-color: #052d3d;
+     background-color: #053f4ff1;
      overflow-x: hidden;
      transition: 0.5s;
      padding-top: 0;
+     border-bottom-left-radius: 40px;
+     border-bottom-right-radius: 40px;
    }
 
    .sidenav a {
