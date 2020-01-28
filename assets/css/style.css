@@ -72,7 +72,6 @@ html, body {
      height:200px;
      border-radius: 50%;
 }
-/* Hover Popup */
  .popup:hover {
      transform: scale(1.1);
      transition: 0.25s
@@ -106,19 +105,16 @@ html, body {
      text-align: left;
      margin-bottom: 2rem;
 }
-
 .subtitle {
      color: #fff;
      text-align: left;
 	   font-size: 1.7em;
 	   padding-top: 1rem;
 }
-
  .name {
      color: #fff;
      text-align: center;
 }
-
  .intro {
      text-align: justify;
      width: 80%;
@@ -127,43 +123,25 @@ html, body {
  .void-background {
      background-color: transparent;
 }
-
-/*
- .auth-btn {
-     font-family: Montserrat;
-     font-size: 14px;
-     padding: 7px;
-     margin: 5px;
-     background-color: #fff;
-     border-radius: 10px;
-     cursor: pointer;
-}
-*/
-
 #ryerson {
 	font-size: 0.85em;
 }
-
  #photo {
      margin: 0 auto;
      width: 5%;
      height: 5%;
 }
-
  @media screen and (max-width: 800px) {
-
    /* Side Nav CSS */
    #navLinks {
      padding-top: 60px;
      display: block;
    }
-
    #bars {
      margin: 20px;
      display: block;
      cursor: pointer;
    }
-
    .sidenav {
      width: 100%;
      height: 0;
@@ -178,7 +156,6 @@ html, body {
      border-bottom-left-radius: 40px;
      border-bottom-right-radius: 40px;
    }
-
    .sidenav a {
      padding: 10px;
      text-decoration: none;
@@ -187,11 +164,9 @@ html, body {
      display: block;
      transition: 0.5s;
    }
-
    .sidenav a:hover {
      color: #f1f1f1;
    }
-
    .sidenav .closebtn {
      position: absolute;
      top: 0;
@@ -199,17 +174,14 @@ html, body {
      font-size: 36px;
      margin-left: 50px;
    }
-
    .social-icons {
         width: 25%;
         height: 25%;
    }
-
     #photo {
         width: 25%;
         height: 25%;
    }
-
    /* OLD NAV
      .nav-menu {
          background-color: #063647;
@@ -228,7 +200,6 @@ html, body {
     }
     */
 }
-
 /* Side Nav CSS
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}

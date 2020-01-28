@@ -3,18 +3,19 @@
    <head>
       <title>Jacky Ly | Ryerson CS Co-op</title>
       <!-- CSS files -->
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+      <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"> -->
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-      <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css">
-      <link rel="stylesheet" type="text/css" href="assets/style.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/bulma.min.css">
+      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
       <link rel="icon" type="image/x-icon" href="assets/img/favicon_round.ico">
       <meta name="author" content="Jacky Ly">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <!-- Scripts  -->
       <script src="https://kit.fontawesome.com/e91efeadf2.js" crossorigin="anonymous"></script>
-      <!-- <script async src="assets/app.js"></script> -->
-      <script async src="assets/buttons.js"></script>
-      <!-- <script src="assets/controller.js"></script> -->
+      <script async src="assets/js/buttons.js"></script>
+      <script async src="assets/js/script.js"></script>
+      <!-- <script async src="assets/js/app.js"></script> -->
+      <!-- <script src="assets/js/controller.js"></script> -->
       <!-- Global site tag (gtag.js) - Google Analytics -->
       <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23500714-3"></script>
       <script>
@@ -23,29 +24,12 @@
          gtag('js', new Date());
          gtag('config', 'UA-23500714-3');
       </script>
-      <!-- Javascript -->
-      <script>
-         function view_pdf(file) {
-         if (screen.width <= 768) {
-         		gdocs = "https://docs.google.com/viewer?url=" + location.href;
-         		document.getElementById('resume-pdf').href = gdocs + file + "&embedded=true";
-         	} else {
-         		document.getElementById('resume-pdf').href = file;
-         	 }
-         }
-         function openNav() {
-           document.getElementById("sideMenu").style.height = "45%";
-         }
-         function closeNav() {
-           document.getElementById("sideMenu").style.height = "0";
-         }
-      </script>
       <script type='application/ld+json'>
          {
          "@context": "http://www.schema.org",
          "@type": "person",
          "name": "Jacky Ly",
-         "jobTitle": "Co-op Student",
+         "jobTitle": "Student",
          "url": "https://JackyLy.ca/",
          "email": "jacky.ly@ryerson.ca"
          }
@@ -132,7 +116,7 @@
                   Most of my <a href="https://projects.jackyly.ca" target="_blank">projects</a> are available on my <a href="https://github.com/lyjacky11" target="_blank">GitHub</a> profile.
                   To learn more about me, feel free to check out my <a onclick="document.getElementById('resume').scrollIntoView()">resume</a> and my
                   <a onclick="document.getElementById('social').scrollIntoView()"> social networks</a> below!
-				  <!-- P.S I also run a <a href="https://www.youtube.com/user/LyJacky" target="_blank">YouTube channel</a> where I edit and upload different types of content such as vlogs! :) -->
+				          <!-- P.S I also run a <a href="https://www.youtube.com/user/LyJacky" target="_blank">YouTube channel</a> where I edit and upload different types of content such as vlogs! :) -->
                </p>
             </div>
          </div>
@@ -181,7 +165,7 @@
                         <div>
                            <div class="projects_div">
                               <b>Intro to Material UI and Laravel</b>
-							  <br><br>
+							                <br><br>
                               <a href='https://www.heroku.com/' target="_blank"><img class="popup" alt='Powered by Heroku' src='assets/img/heroku-logo.png' title="Heroku" width="175"/></a>
                               <h6>Heroku and the Heroku logo are<br>trademarks of Salesforce.com, Inc.</h6>
                            </div>
