@@ -12,6 +12,7 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <!-- Scripts  -->
       <script src="https://kit.fontawesome.com/e91efeadf2.js" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
       <script async src="assets/js/buttons.js"></script>
       <script async src="assets/js/script.js"></script>
       <!-- <script async src="assets/js/app.js"></script> -->
@@ -97,7 +98,13 @@
          <div class="container has-text-centered">
             <a onclick="document.getElementById('about').scrollIntoView()"><img title="Avatar" class="avatar popup" src="assets/img/profile.png" alt="Avatar"></a>
             <br><br>
-            <h1 class="title name"><b>Jacky Ly</b></h1>
+            <!--<h1 class="title name"><b>Jacky Ly</b></h1>-->
+            <div id="typed-strings">
+            <p><b>Jacky Ly</b></p>
+            <p><b>A Developer.</b></p>
+            <p><b>A Content Creator.</b></p>
+            </div>
+            <span class="title name" id="typed"></span>
             <h2 class="subtitle name">Computer Science Co-op<br><span id="ryerson">Ryerson University</span></h2>
             <div id="about"></div>
             <a target="_blank" href="https://www.linkedin.com/in/lyjacky11/"><img class="popup" style="width: 170px; height: 33px;" title="Connect" src="assets/img/linkedin-connect.png" alt="Connect"/></a> &emsp;
