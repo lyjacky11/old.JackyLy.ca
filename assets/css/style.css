@@ -140,6 +140,18 @@ html, body {
      width: 5%;
      height: 5%;
 }
+#backTop {
+  padding: 20px;
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  margin-left: 10px;
+  border-radius: 10px;
+  float: right;
+  position: fixed;
+  bottom: 0;
+  background-color: #053f4ff1;
+  cursor: pointer;
+}
  @media screen and (max-width: 800px) {
    /* Side Nav CSS */
    #navLinks {
@@ -209,7 +221,12 @@ html, body {
     }
     */
 }
-/* Side Nav CSS
+
+@media (max-height: 100%) {
+  #backTop {display: none !important;}
+}
+
+/* Sidenav CSS
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
