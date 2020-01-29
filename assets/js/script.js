@@ -15,9 +15,9 @@ function closeNav() {
 
 var typed = new Typed('#typed', {
     stringsElement: '#typed-strings',
-    typeSpeed: 75,
+    typeSpeed: 60,
     startDelay: 500,
-    backSpeed: 50,
+    backSpeed: 40,
     backDelay: 1250,
     loop: true,
     loopCount: Infinity,

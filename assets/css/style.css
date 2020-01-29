@@ -21,7 +21,7 @@ html, body {
 }
 
 .typed-cursor {
-    font-size: 40px;
+    font-size: 30px;
     opacity: 1;
     -webkit-animation: blink 0.7s infinite;
     -moz-animation: blink 0.7s infinite;
@@ -109,16 +109,8 @@ html, body {
      background-color: transparent;
      border: 2px solid rgba(7, 59, 79, 0.5);
 }
- .title {
-     color: #fff;
-     text-align: left;
-     margin-bottom: 2rem;
-}
 .subtitle {
-     color: #fff;
-     text-align: left;
 	   font-size: 1.7em;
-	   padding-top: 1rem;
 }
  .name {
      color: #fff;
@@ -133,7 +125,7 @@ html, body {
      background-color: transparent;
 }
 #ryerson {
-	font-size: 0.85em;
+	font-size: 1.25em;
 }
  #photo {
      margin: 0 auto;
@@ -220,10 +212,6 @@ html, body {
          transform: scale(1.02);
     }
     */
-}
-
-@media (max-height: 100%) {
-  #backTop {display: none !important;}
 }
 
 /* Sidenav CSS
