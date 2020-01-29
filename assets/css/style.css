@@ -62,7 +62,7 @@ html, body {
      padding: 0.2rem;
 }
  .sticky {
-     background: #063647;
+     background-color: #063647f1;
      position: sticky;
      top: 0;
      border-radius: 15px;
@@ -145,7 +145,7 @@ html, body {
   position: fixed;
   bottom: 0;
   z-index: 99;
-  background-color: #053f4ff1;
+  background-color: #053f4f81;
   cursor: pointer;
 }
  @media screen and (max-width: 800px) {
