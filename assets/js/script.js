@@ -7,7 +7,7 @@ if (screen.width <= 768) {
   }
 }
 function openNav() {
-  document.getElementById("sideMenu").style.height = "40%";
+  document.getElementById("sideMenu").style.height = "45%";
 }
 function closeNav() {
   document.getElementById("sideMenu").style.height = "0";
