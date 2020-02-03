@@ -2,7 +2,7 @@ html, body {
      font-family: Raleway;
      font-size: 16px;
      color: #dfdfdf;
-     background-color: #063647;
+     background-color: #1A3A59;
      scroll-behavior: smooth;
 }
  ::-webkit-scrollbar {
@@ -29,10 +29,10 @@ html, body {
 }
 
  a {
-     color: #00bfa5;
+     color: #4CAEFF;
 }
  a:hover {
-     color: #5df2d6;
+     color: #ADDAFF;
 	   cursor: pointer;
 }
  section {
@@ -46,23 +46,23 @@ html, body {
      display: none;
 }
  .section-1 {
-     background: #063647;
+     background: #1A3A59;
 }
  .section-2 {
-     background-color: #052D3D;
+     background-color: #193454;
 }
  .section-3 {
-     background-color: #063647;
+     background-color: #1A3A59;
 }
  .section-4 {
-     background-color: #052D3D;
+     background-color: #193454;
 }
  .section-5 {
-     background-color: #052D3D;
+     background-color: #193454;
      padding: 0.2rem;
 }
  .sticky {
-     background-color: #063647f1;
+     background-color: #1A3A59f1;
      position: sticky;
      top: 0;
      border-radius: 15px;
@@ -145,7 +145,7 @@ html, body {
   position: fixed;
   bottom: 0;
   z-index: 99;
-  background-color: #053f4f81;
+  background-color: #1A3A5981;
   cursor: pointer;
 }
  @media screen and (max-width: 800px) {
@@ -166,7 +166,7 @@ html, body {
      z-index: 1;
      top: 0;
      left: 0;
-     background-color: #053f4ff1;
+     background-color: #1A3A59F1;
      overflow-x: hidden;
      transition: 0.5s;
      padding-top: 0;
@@ -182,7 +182,7 @@ html, body {
      transition: 0.5s;
    }
    .sidenav a:hover {
-     color: #f1f1f1;
+     color: #F1F1F1;
    }
    .sidenav .closebtn {
      position: absolute;
@@ -201,7 +201,7 @@ html, body {
    }
    /* OLD NAV
      .nav-menu {
-         background-color: #063647;
+         background-color: #1A3A59;
     }
      .nav-toggle:hover {
          background-color: transparent;
