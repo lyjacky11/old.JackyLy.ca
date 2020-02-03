@@ -144,7 +144,7 @@ font-size: 1.8em;
 font-family: "Open Sans";
 font-weight: 400;
 padding: 20px;
-background-color: rgba(32, 156, 238, 1);
+background-color: rgba(32, 156, 238, 0.9);
 color: white;
 width: 320px;
 margin: 0 auto;
@@ -168,6 +168,6 @@ width: 200px;
 }
 }
 .btn:hover {
-background-color: rgba(32, 156, 238, 0.7);
+background-color: rgba(32, 156, 238, 0.6);
 transition: all 0.25s linear;
 }
