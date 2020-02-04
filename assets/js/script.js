@@ -7,8 +7,9 @@ if (screen.width <= 768) {
   }
 }
 function checkCaptcha() {
-  if(grecaptcha.getResponse().length == 0){
-        document.getElementById('captchaError').style.display = block;
+  if(grecaptcha.getResponse().length == 0) {
+        document.getElementById('captchaError').style.display = 'block';
+        //alert("Oops! reCAPTCHA failed. Please try again!");
         return false;
     }
     return true;
