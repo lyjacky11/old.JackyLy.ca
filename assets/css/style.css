@@ -33,7 +33,7 @@ html, body {
 }
  a:hover {
      color: #ADDAFF;
-	   cursor: pointer;
+	 cursor: pointer;
 }
  section {
      padding-top: 3rem;
@@ -147,6 +147,38 @@ html, body {
   z-index: 99;
   background-color: #1A3A5981;
   cursor: pointer;
+}
+#contact {
+	text-align: center;
+}
+#contact input, textarea {
+	width: 65%;
+	border-radius: 5px;
+	border: 5px grove;
+	border-color: #1E74D2;
+	padding: 10px;
+	color: white;
+	background-color: #1A3A59;
+}
+#contact input:focus, textarea:focus {
+	border-color: #1E91DF;
+}
+#contact textarea {
+	height: 100px;
+	resize: none;
+}
+#contact button {
+	width: 25%;
+	background: #1E74D2;
+	color: #fff;
+	border-radius: 5px;
+	padding: 10px;
+	border: none;
+	cursor: pointer;
+}
+.g-recaptcha > div {
+	display: inline-block;
+	margin: 20px 0;
 }
  @media screen and (max-width: 800px) {
    /* Side Nav CSS */
