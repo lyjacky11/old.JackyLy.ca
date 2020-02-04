@@ -240,7 +240,8 @@
 				<input type="email" name="_replyto" placeholder="Email:" required></input><br><br>
 				<textarea name="message" placeholder="Enter your message..." required></textarea>
 				<div class="g-recaptcha" data-sitekey="6LcuvtUUAAAAAOEw88wO3bttoUtEAvLoSSN05-W_"></div>
-				<button class="popup" type="submit">Send Message</button>
+        <p id="captchaError">Oops! reCAPTCHA failed.<br>Please try to reCAPTCHA again!<br><br></p>
+				<button class="popup" type="submit" onclick="return checkCaptcha();">Send Message</button>
 			</form>
 			</div>
 			<!--

@@ -180,6 +180,10 @@ html, body {
 	border: none;
 	cursor: pointer;
 }
+#captchaError {
+  display: none;
+  color: red;
+}
 .g-recaptcha > div {
 	display: inline-block;
 	margin: 20px 0;

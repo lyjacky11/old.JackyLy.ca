@@ -6,6 +6,13 @@ if (screen.width <= 768) {
    document.getElementById('resume-pdf').href = file;
   }
 }
+function checkCaptcha() {
+  if(grecaptcha.getResponse().length == 0){
+        document.getElementById('captchaError').style.display = block;
+        return false;
+    }
+    return true;
+}
 function openNav() {
   document.getElementById("sideMenu").style.height = "45%";
 }
