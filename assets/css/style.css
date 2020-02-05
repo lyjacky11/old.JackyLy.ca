@@ -205,6 +205,9 @@ html, body {
 label .field:not(.is-empty) + span span {
   transform: scale(0.65) translateY(-50px);
 }
+#contact .is-empty {
+  width: 100%;
+}
 #contact .field {
   outline: none;
   display: block;
