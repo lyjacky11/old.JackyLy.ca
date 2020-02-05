@@ -237,11 +237,18 @@
 			<div id="contact">
 			<form action="https://formspree.io/moqddoro" method="POST">
 				<input type="hidden" name="_subject" value="JackyLy.ca: Contact Inquiry">
-				<input type="email" name="_replyto" placeholder="Email:" required></input><br><br>
-				<textarea name="message" placeholder="Enter your message..." required></textarea>
+        <label>
+				<input class="field is-empty" type="email" name="_replyto" placeholder="username@domain.com" required="required"/>
+        <span><span>Email:</span></span>
+        </label>
+        <br><br>
+        <label>
+				<textarea class="field is-empty" name="message" placeholder="Dear Jacky..." required="required"></textarea>
+        <span><span>Enter Message:</span></span>
+        </label>
 				<div class="g-recaptcha" data-sitekey="6LcuvtUUAAAAAOEw88wO3bttoUtEAvLoSSN05-W_"></div>
-        <p id="captchaError">Oops! reCAPTCHA failed.<br>Please check the reCAPTCHA box!<br><br></p>
-				<button class="popup" type="submit" onclick="return checkCaptcha();">Send Message</button>
+        <p id="captchaError">Oops! reCAPTCHA failed.<br>Please check the reCAPTCHA box!</p><br>
+				<button type="submit" onclick="return checkCaptcha()">Send Message</button>
 			</form>
 			</div>
 			<!--
