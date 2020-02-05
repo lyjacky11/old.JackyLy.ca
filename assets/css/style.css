@@ -150,12 +150,6 @@ html, body {
 }
 #contact {
 	text-align: center;
-  /*
-  padding: 50px 0;
-  border: 1px solid;
-  border-radius: 10px;
-  border-color: #489ACC;
-  */
 }
 #contact input, textarea {
 	width: 65%;
@@ -217,15 +211,21 @@ label .field:not(.is-empty) + span span {
 #contact .field.is-empty:not(.is-focused) {
   opacity: 0;
 }
-#captchaError {
-  display: none;
-  color: red;
-}
 #contact .g-recaptcha > div {
 	display: inline-block;
 	margin: 20px 0;
 }
+#captchaError {
+  display: none;
+  color: red;
+}
  @media screen and (max-width: 800px) {
+   #contact {
+     padding: 30px 0;
+     border: 1px solid;
+     border-radius: 10px;
+     border-color: #489ACC;
+   }
    /* Side Nav CSS */
    #navLinks {
      padding-top: 60px;
