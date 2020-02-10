@@ -117,7 +117,7 @@ html, body {
 .subtitle {
     color: #fff;
     text-align: center;
-    font-size: 1.7em;
+    font-size: 1.25em;
 }
  .intro {
      text-align: justify;
@@ -126,9 +126,6 @@ html, body {
 }
  .void-background {
      background-color: transparent;
-}
-#ryerson {
-	font-size: 1.25em;
 }
  #photo {
      margin: 0 auto;

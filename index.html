@@ -2,20 +2,19 @@
 <html lang="en">
    <head>
       <title>Jacky Ly | Ryerson CS Co-op</title>
-      <!-- CSS files -->
-      <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat"> -->
+      <meta name="author" content="Jacky Ly">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <!-- CSS Styles -->
       <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
       <link rel="stylesheet" type="text/css" href="assets/css/bulma.min.css">
       <link rel="stylesheet" type="text/css" href="assets/css/style.css">
       <link rel="icon" type="image/x-icon" href="assets/img/favicon_round.ico">
-      <meta name="author" content="Jacky Ly">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <!-- Scripts  -->
-      <script src="https://kit.fontawesome.com/e91efeadf2.js" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-	  <script async defer src="https://www.google.com/recaptcha/api.js"></script>
+      <script async src="https://kit.fontawesome.com/e91efeadf2.js"></script>
+	    <script async defer src="https://www.google.com/recaptcha/api.js"></script>
       <script async src="assets/js/buttons.js"></script>
-      <script async src="assets/js/script.js"></script>
+      <script async src="assets/js/typed.js"></script>
+      <script async defer src="assets/js/script.js"></script>
       <!-- <script async src="assets/js/app.js"></script> -->
       <!-- <script src="assets/js/controller.js"></script> -->
       <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -80,7 +79,7 @@
               <a class="nav-item" onclick="closeNav(); document.getElementById('about').scrollIntoView();"><b>About</b></a>
               <a class="nav-item" onclick="closeNav(); document.getElementById('projects').scrollIntoView();"><b>Projects</b></a>
               <a class="nav-item" onclick="closeNav(); document.getElementById('resume').scrollIntoView();"><b>Resume</b></a>
-              <a class="nav-item" onclick="closeNav(); document.getElementById('social').scrollIntoView();"><b>Contact</b></a>
+              <a class="nav-item" onclick="closeNav(); document.getElementById('contact').scrollIntoView();"><b>Contact</b></a>
            </div>
          </div>
          <i id="bars" class="fas fa-bars" onclick="openNav()"></i>
@@ -108,13 +107,15 @@
             <span class="subtitle" id="typed"></span>
             <br>
             <!--<h2 class="subtitle name">Computer Science Co-op</h2>-->
-            <h2 class="subtitle" id="ryerson">Ryerson University</h2>
+            <h2 class="subtitle">Ryerson University</h2>
             <div id="about"></div>
             <a target="_blank" href="https://www.linkedin.com/in/lyjacky11/"><img class="popup" style="width: 170px; height: 33px;" title="Connect" src="assets/img/linkedin-connect.png" alt="Connect"/></a> &emsp;
-			<a class="github-button" href="https://github.com/lyjacky11" data-size="large" aria-label="Follow @lyjacky11 on GitHub">Follow @lyjacky11</a> &emsp;
+			      <a class="github-button" href="https://github.com/lyjacky11" data-size="large" aria-label="Follow @lyjacky11 on GitHub">Follow @lyjacky11</a> &emsp;
             <!-- <a target="_blank" href="https://www.youtube.com/subscription_center?add_user=LyJacky"><img class="yt-sub popup" style="width: 115px; height: 31px;" title="Subscribe" src="assets/img/subscribe.png" alt="Subscribe"/></a> -->
          </div>
-         <br><br>
+         <br>
+         <h3 class="subtitle">Seeking Summer 2020 Opportunities!</h3>
+         <br>
          <div class="container">
             <div class="has-text-centered">
                <h3 class="title is-3">About Me</h3>
@@ -125,7 +126,7 @@
                   I am an inspiring co-op student studying Computer Science at Ryerson University. I can write code in Java, Python, C, HTML5/CSS3, JavaScript, and more!
                   My <a href="https://projects.jackyly.ca" target="_blank">projects</a> are available on my <a href="https://github.com/lyjacky11" target="_blank">GitHub</a> profile.
                   Feel free to check out my <a onclick="document.getElementById('resume').scrollIntoView()">resume</a> and
-                  <a onclick="document.getElementById('social').scrollIntoView()"> contact info</a> below!
+                  <a onclick="document.getElementById('contact').scrollIntoView()"> contact info</a> below!
 				          <!-- P.S I also run a <a href="https://www.youtube.com/user/LyJacky" target="_blank">YouTube channel</a> where I edit and upload different types of content such as vlogs! :) -->
                </p>
             </div>
@@ -169,7 +170,7 @@
                      <article>
                         <div>
                            <figure class="image project-figure">
-                              <a target="_blank" href="http://cps530.jackyly.ca/"><img title="Material UI/React" class="popup" src="assets/img/material-ui.png" alt="Logo"></a>
+                              <a target="_blank" href="https://cps530-tp.herokuapp.com/"><img title="Material UI/React" class="popup" src="assets/img/material-ui.png" alt="Logo"></a>
                            </figure>
                         </div>
                         <div>
@@ -225,8 +226,8 @@
          </div>
       </section>
 
-      <!-- Social -->
-      <div id="social"></div>
+      <!-- Contact Form -->
+      <div id="contact"></div>
       <section class="section section-4">
          <br>
          <div class="container">
@@ -246,7 +247,7 @@
         <span><span>Enter Message:</span></span>
         </label>
 				<div class="g-recaptcha" data-sitekey="6LcuvtUUAAAAAOEw88wO3bttoUtEAvLoSSN05-W_" data-theme="dark"></div>
-        <p id="captchaError">Oops! reCAPTCHA failed.<br>Please check the reCAPTCHA box!</p><br>
+        <p id="captchaError">Oops! reCAPTCHA failed.<br>Please check the reCAPTCHA box above!</p><br>
 				<button type="submit" onclick="return checkCaptcha()">Send Message</button>
 			</form>
 			</div>
