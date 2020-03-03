@@ -4,14 +4,16 @@
 <meta name="author" content="Jacky Ly">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-html, body {margin: 0; height: 100%; overflow: hidden; cursor: none; }
+html, body {margin: 0; height: 100%; overflow: hidden; cursor: none; background-color: #2067B2; }
+#overlay {display: none; background-color: black; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: 10; }
 .content {width:700px; margin-left:30px; margin:10%; auto;user-select:none;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none; }
 </style>
 </head>
-<!-- <body bgcolor="#1071AA" scroll="no"> -->
-<body bgcolor="#2067B2" scroll="no">
+<body>
+<div id="overlay">
+</div>
 <div class="content">
-<font face="Segoe UI Light" size="6" color="#FFFFFF"> 
+<font face="Segoe UI Light" size="6" color="#FFFFFF">
 <p style="font-size:100pt; margin:0; padding-bottom:20px">:(</p>
 <p style="font-size:21pt; margin:0; padding:0">Your PC ran into a problem and needs to restart. We're just</p>
 <p style="font-size:21pt; margin:0; padding:0">collecting some error info, and then we'll restart for you.</p>
@@ -30,17 +32,23 @@ document.addEventListener('contextmenu', event => event.preventDefault());
 counter = 0;
 function updatePercent(){
     document.getElementById("percent").innerHTML = counter + "% complete";
+	if (counter > 90) {
+		document.getElementById("overlay").style.display = 'block';
+	}
 	if (counter < 100) {
-		counter = Math.min(100, (counter + Math.floor(Math.random() * 3) + 1));
+		counter = Math.min(100, (counter + Math.floor(Math.random() * 4) + 1));
 	}
 	else {
-		setTimeout(function() { counter = 0; }, 3000);
+		setTimeout(function() {
+		counter = 0;
+		document.getElementById("overlay").style.display = 'none';
+		}, 5000);
 	}
 }
 updatePercent();
 setInterval(function(){
     updatePercent()
-}, (Math.random() * 2500) + 500)
+}, (Math.random() * 1000) + 500)
 /*
 function noClick() {
 if ((event.button==1)||(event.button==2)) {
