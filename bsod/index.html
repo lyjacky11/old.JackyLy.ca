@@ -13,18 +13,32 @@ html, body {margin: 0; height: 100%; overflow: hidden; cursor: none; }
 <p style="font-size:100pt; margin:0; padding-bottom:20px">:(</p>
 <p style="font-size:21pt; margin:0; padding:0">Your PC ran into a problem and needs to restart. We're just</p>
 <p style="font-size:21pt; margin:0; padding:0">collecting some error info, and then we'll restart for you.</p>
-<p style="font-size:16pt; color:#7ce3ff; margin:0; padding:0"><br>25% complete</br></p>
-<p style="float:left"><img src="QRCode.png" alt="QR Code"></p>
-<p style="font-size:16pt; margin:0; padding-left:135px"><br>For more information about this issue and</p>
-<p style="font-size:16pt; margin:0; padding-left:135px">possible fixes, visit</br></p>
-<p style="font-size:16pt; color:#7ce3ff; margin:0; padding-left:135px"><br>http://windows.com/stopcode</br></p>
-<p style="font-size:16pt; margin:0; padding:0; padding-top:16px"><br>If you call a support person, give them this info:</p>
+<p id="percent" style="font-size:16pt; color:#7ce3ff; margin:0; padding-top: 15px"><br>0% complete</br></p>
+<p style="float:left"><img src="qr-code-transparent.png" width="125" height="125 "alt="QR Code"></p>
+<p style="font-size:16pt; margin:0; padding-left:140px"><br>For more information about this issue and</p>
+<p style="font-size:16pt; margin:0; padding-left:140px">possible fixes, visit</br></p>
+<p style="font-size:16pt; color:#7ce3ff; margin:0; padding-left:140px"><br>http://windows.com/stopcode</br></p><br>
+<p style="font-size:16pt; margin:0; padding:0;"><br>If you call a support person, give them this info:</p>
 <p style="font-size:16pt; margin:0; padding:0">Stop code: DRIVER_IRQL_NOT_LESS_OR_EQUAL</br></p>
 </font>
 </div>
 </body>
 <script language="javascript">
 document.addEventListener('contextmenu', event => event.preventDefault());
+counter = 0;
+function updatePercent(){
+    document.getElementById("percent").innerHTML = counter + "% complete";
+	if (counter < 100) {
+		counter = Math.min(100, (counter + Math.floor(Math.random() * 3) + 1));
+	}
+	else {
+		setTimeout(function() { counter = 0; }, 3000);
+	}
+}
+updatePercent();
+setInterval(function(){
+    updatePercent()
+}, (Math.random() * 2500) + 500)
 /*
 function noClick() {
 if ((event.button==1)||(event.button==2)) {
