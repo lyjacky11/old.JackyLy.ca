@@ -3,6 +3,8 @@
 # Redirect default Netlify subdomain to primary domain
 https://jackyly.netlify.com/* https://jackyly.ca/:splat 301!
 
-# External redirects
-/YT https://www.youtube.com/user/LyJacky 200!
+# Internal redirects
 /resume https://jackyly.ca/assets/jacky-ly-resume.pdf 200!
+
+# External redirects
+/YT https://www.youtube.com/user/LyJacky 301!
