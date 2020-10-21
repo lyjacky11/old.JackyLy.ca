@@ -1,5 +1,5 @@
 {
-    "name": "Jacky Ly",
+    "name": "Jacky Ly | Ryerson CS Co-op",
     "short_name": "Jacky Ly",
     "icons": [
         {
@@ -13,7 +13,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#ffffff",
-    "background_color": "#ffffff",
+    "theme_color": "#1A3A59",
+    "background_color": "#1A3A59",
     "display": "standalone"
 }
