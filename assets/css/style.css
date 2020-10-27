@@ -120,9 +120,8 @@ html, body {
     font-size: 1.25em;
 }
  .intro {
-     text-align: justify;
-     width: 80%;
-     margin: 0 auto;
+	 font-size: 1.1rem;
+     text-align: center;
 }
  .void-background {
      background-color: transparent;
