@@ -133,13 +133,13 @@ html, body {
 }
 #backTop {
   padding: 20px;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   margin-bottom: 15px;
   margin-left: 10px;
   border-radius: 10px;
-  float: right;
   position: fixed;
-  bottom: 0;
+  right: 25px;
+  bottom: 25px;
   z-index: 99;
   background-color: #1A3A5981;
   cursor: pointer;
