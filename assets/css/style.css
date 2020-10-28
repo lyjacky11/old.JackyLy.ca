@@ -30,6 +30,7 @@ html, body {
 
  a {
      color: #4CAEFF;
+	 text-decoration: none !important;
 }
  a:hover {
      color: #ADDAFF;
@@ -45,27 +46,74 @@ html, body {
  .hidden, #bars {
      display: none;
 }
- .section-1 {
+ .section-1, .section-3 {
      background: #1A3A59;
 }
- .section-2 {
+ .section-2, .section-4, .section-5 {
      background-color: #193454;
-}
- .section-3 {
-     background-color: #1A3A59;
-}
- .section-4 {
-     background-color: #193454;
-}
- .section-5 {
-     background-color: #193454;
-     padding: 0.2rem;
 }
  .sticky {
      background-color: #1A3A59f1;
      position: sticky;
      top: 0;
      border-radius: 15px;
+}
+.icon {
+    font-size: 21px;
+    height: 1.5rem;
+    line-height: 1.5rem;
+    width: 1.5rem;
+}
+.icon, .icon.is-large, .icon.is-medium, .icon.is-small {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+span {
+    font-style: inherit;
+    font-weight: inherit;
+}
+.nav {
+    min-height: 3.5rem;
+    text-align: center;
+	list-style: none;
+    z-index: 2;
+}
+.nav-toggle span, a {
+    transition: none 86ms ease-out;
+}
+.nav, .nav-center {
+    align-items: stretch;
+    display: flex;
+}
+.nav-left {
+    display: flex;
+    justify-content: flex-start;
+    overflow-x: auto;
+}
+.nav-right {
+    justify-content: flex-end;
+}
+.nav-left, .nav-right {
+    align-items: stretch;
+    flex-basis: 0;
+    flex-grow: 1;
+    flex-shrink: 0;
+}
+.modal, .nav-left, .tabs {
+    overflow: hidden;
+}
+.button, .nav-left, .tabs, .tag {
+    white-space: nowrap;
+}
+.nav-item {
+    align-items: center;
+    display: flex;
+    flex-grow: 0;
+    flex-shrink: 0;
+    font-size: 1rem;
+    justify-content: center;
+    padding: .5rem .75rem;
 }
  a.nav-item {
      padding: 20px 12px;
@@ -78,20 +126,23 @@ html, body {
      transition: 0.25s
 }
  .avatar {
-     height:200px;
+     height: 200px;
      border-radius: 50%;
 }
  .popup:hover {
      transform: scale(1.1);
      transition: 0.25s
 }
+.lead {
+	font-size: 1.15rem;
+}
  .intro-description {
      padding-top: 1rem;
 }
  .social-container img {
-     max-width:100%;
-     max-height:175px;
-     margin-bottom:15px;
+     max-width: 100%;
+     max-height: 175px;
+     margin-bottom: 15px;
 }
  .social-icons {
      max-width: 35%;
@@ -118,10 +169,6 @@ html, body {
     color: #fff;
     text-align: center;
     font-size: 1.25em;
-}
- .intro {
-	 font-size: 1.1rem;
-     text-align: center;
 }
  .void-background {
      background-color: transparent;
@@ -222,7 +269,6 @@ label .field:not(.is-empty) + span span {
 	margin: 20px 0;
 }
  @media screen and (max-width: 800px) {
-   /* Side Nav CSS */
    #navLinks {
      padding-top: 60px;
      display: block;
@@ -264,6 +310,9 @@ label .field:not(.is-empty) + span span {
      font-size: 36px;
      margin-left: 50px;
    }
+   .lead {
+	   font-size: 1rem;
+   }
    .social-icons {
         width: 25%;
         height: 25%;
@@ -272,28 +321,4 @@ label .field:not(.is-empty) + span span {
         width: 25%;
         height: 25%;
    }
-   /* OLD NAV
-     .nav-menu {
-         background-color: #1A3A59;
-    }
-     .nav-toggle:hover {
-         background-color: transparent;
-    }
-     .nav-toggle span {
-         background-color: #dfdfdf;
-    }
-     .nav-toggle span:hover {
-         background-color: #fff;
-    }
-     a.nav-item:hover {
-         transform: scale(1.02);
-    }
-    */
 }
-
-/* Sidenav CSS
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-*/

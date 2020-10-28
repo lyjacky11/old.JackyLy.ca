@@ -32,7 +32,6 @@
 		<!-- CSS Stylesheets -->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" />
 		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous" />
-		<link rel="stylesheet" type="text/css" href="assets/css/bulma.min.css" />
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 		
 		<!-- Favicons -->
@@ -53,6 +52,8 @@
 		<nav class="sticky nav container">
 			<!-- This "nav-menu" is hidden on mobile -->
 			<!-- Add the modifier "is-active" to display it on mobile -->
+			
+			<!-- Left nav bar -->
 			<div class="nav-left">
 				<a target="_blank" href="https://www.linkedin.com/in/lyjacky11/" class="nav-item">
 					<span class="icon">
@@ -64,12 +65,9 @@
 						<i class="fab fa-github"></i>
 					</span>
 				</a>
-				<!--
-				<a target="_blank" href="https://www.instagram.com/lyjacky11/" class="nav-item"><span class="icon"><i class="fab fa-instagram"></i></span></a>
-				<a target="_blank" href="https://www.facebook.com/lyjacky11" class="nav-item"><span class="icon"><i class="fab fa-facebook"></i></span></a>
-				<a target="_blank" href="https://www.youtube.com/user/LyJacky" class="nav-item"><span class="icon"><i class="fab fa-youtube"></i></span></a>
-				-->
 			</div>
+			
+			<!-- Right nav bar -->
 			<div id="sideMenu" class="nav-right sidenav">
 				<div id="navLinks">
 					<a class="closebtn hidden" href="javascript:void(0)" onclick="closeNav()"> &times; </a>
@@ -96,40 +94,46 @@
 			<!-- <span class="nav-toggle"><span></span><span></span><span></span></span> -->
 		</nav>
 		
-		<!-- About Me -->
 		<section class="section section-1">
-			<div class="container has-text-centered">
+			<div class="container text-center">
+				<!-- Profile Picture -->
 				<a onclick="document.getElementById('about').scrollIntoView()">
 					<img title="Avatar" class="avatar popup" src="assets/img/profile.png" alt="Avatar" />
 				</a>
-				<br /><br />
-				<h1 class="title">
+				<!-- Title -->
+				<h2 class="title mt-5">
 					<b>Jacky Ly</b>
-				</h1>
+				</h2>
+				<!-- Typed Strings -->
 				<div id="typed-strings">
 					<p>Computer Science Co-op.</p>
 					<p>A Web Developer.</p>
 					<p>A Programmer.</p>
 				</div>
+				<!-- Subtitle -->
 				<span class="subtitle" id="typed"></span>
-				<br />
 				<!-- <h2 class="subtitle name">Computer Science Co-op</h2> -->
-				<h2 class="subtitle">Ryerson University</h2>
-				<div id="about"></div>
-				<a target="_blank" href="https://www.linkedin.com/in/lyjacky11/">
-					<img class="popup" style="width: 170px; height: 33px;" title="Connect" src="assets/img/linkedin-connect.png" alt="Connect" />
-				</a> &emsp;		  
-				<a class="github-button" href="https://github.com/lyjacky11" data-size="large" aria-label="Follow @lyjacky11 on GitHub">Follow @lyjacky11</a> &emsp;
-				<!-- <a target="_blank" href="https://www.youtube.com/subscription_center?add_user=LyJacky"><img class="yt-sub popup" style="width: 115px; height: 31px;" title="Subscribe" src="assets/img/subscribe.png" alt="Subscribe"/></a> -->
-			</div>
-			<br /><br />
-			<div class="container">
-				<div class="has-text-centered">
-					<h3 class="title is-3">About Me</h3>
+				<h2 class="subtitle mt-2">Ryerson University</h2>				
+				<!-- LinkedIn Button -->
+				<div class="mt-5">
+					<a target="_blank" href="https://www.linkedin.com/in/lyjacky11/">
+						<img class="popup" width="175" title="Connect" src="assets/img/linkedin-connect.png" alt="Connect" />
+					</a>
 				</div>
-				<div class="container">
-					<br />
-					<p class="intro">
+				<div id="about" />
+				<!-- GitHub Button -->
+				<div class="mt-4">
+					<a class="github-button" href="https://github.com/lyjacky11" data-size="large" aria-label="Follow @lyjacky11 on GitHub">Follow @lyjacky11</a>
+				</div>
+			</div>
+			
+			<!-- About Me -->
+			<div class="container mt-5">
+				<div class="text-center">
+					<h3 class="title">About Me</h3>
+				</div>
+				<div class="text-center">
+					<p class="lead">
 						Hi there! My name is Jacky Ly and I'm currently a co-op student studying Computer Science at Ryerson University. <br /><br />
 						I build and develop websites in HTML5/CSS3, JavaScript, React, and applications in Java, Python, C#, and more! <br />
 						I can learn new concepts quickly and complete technical tasks efficiently with minimal guidance.<br /><br />
@@ -142,80 +146,79 @@
 				
 		<!-- Projects -->
 		<div id="projects" />
-		<br />
 		<section class="section section-2">
 			<div class="container">
-				<div class="has-text-centered">
-					<h3 class="title is-3">Projects</h3>
+				<div class="text-center">
+					<h3 class="title">Projects</h3>
 				</div>
-				<div class="columns is-multiline is-desktop">
+				<div class="row">
+				
 					<!-- Project 1 -->
-					<div class="column">
+					<div class="col-12 col-md-6">
 						<div class="box project-text">
 							<article>
 								<div>
 									<figure class="image project-figure">
 										<a target="_blank" href="https://covid-app.jackyly.ca">
-											<img title="COVID Screening App" class="popup" src="assets/img/react-covid-cover.png" alt="Logo" />
+											<img title="COVID Screening App" class="popup" width="256" src="assets/img/react-covid-cover.png" alt="Logo" />
 										</a>
 									</figure>
 								</div>
 								<div>
 									<div class="projects_div">
+										<br />
 										<b>
 											<a target="_blank" href="https://covid-app.jackyly.ca">COVID Screening App</a>
 										</b> &nbsp; | &nbsp; 
 										<b>
 											<a target="_blank" href="https://github.com/lyjacky11/covid-screening">GitHub Repo</a>
 										</b>
-										<br /><br/>
-										<!-- <a href='https://netlify.com/' target="_blank"><img class="popup" alt='Hosted on Netlify' src='assets/img/netlify.png' title="Netlify" width="150"/></a> -->
-										<br />
+										<br /><br />
 										<a href="https://app.netlify.com/sites/covid-screening/deploys" target="_blank">
 											<img class="popup" alt="Deploy Status" src="https://api.netlify.com/api/v1/badges/aac28ce4-ba6e-42bd-abfa-66f9536d6d61/deploy-status" title="Deploy Status" width="160" />
 										</a>
-										<br /><br />
-										<h6>
+										<h6 class="mt-4">
 											<b>Languages:</b> HTML5, CSS3, JS, React
 										</h6>
-										<!-- <h6>Netlify and the Netlify logo are<br>trademarks of Netlify, Inc.</h6> -->
 									</div>
 								</div>
 							</article>
 						</div>
+						<br />
 					</div>
+					
 					<!-- Project 2 -->
-					<div class="column">
+					<div class="col-12 col-md-6">
 						<div class="box project-text">
 							<article>
 								<div>
 									<figure class="image project-figure">
 										<a target="_blank" href="https://timesheet.jackyly.ca">
-											<img title="Timesheets Logo" class="popup" src="assets/img/timesheets.jpg" alt="Logo" />
+											<img title="Timesheets Logo" class="popup" width="256" src="assets/img/timesheets.jpg" alt="Logo" />
 										</a>
 									</figure>
 								</div>
 								<div>
 									<div class="projects_div">
+										<br />
 										<b>
 											<a target="_blank" href="https://timesheet.jackyly.ca">Time Sheet Calculator</a>
 										</b> &nbsp; | &nbsp; 
 										<b>
 											<a target="_blank" href="https://github.com/lyjacky11/TimeSheetCalculator">GitHub Repo</a>
 										</b>
-										<br /><br/>
-										<a href='https://go.jackyly.ca/timesheet' target="_blank">
-											<img class="popup" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' title="Google Play" width="180" />
-										</a>
 										<br />
-										<h6>
+										<a href='https://go.jackyly.ca/timesheet' target="_blank">
+											<img class="popup" alt='Get it on Google Play' src='https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png' title="Google Play" width="170" />
+										</a>
+										<h6 class="mt-2">
 											<b>Languages:</b> HTML5, CSS3, JS, Java
 										</h6>
-										<!-- <h6>Google Play and the Google Play<br>logo are trademarks of Google LLC.</h6> -->
 									</div>
 								</div>
 							</article>
 						</div>
+						<br />
 					</div>
 				</div>
 			</div>
@@ -223,16 +226,15 @@
 				
 		<!-- Resume -->
 		<div id="resume" />
-		<br />
 		<section class="section section-3">
 			<br />
 			<div class="container">
-				<div class="has-text-centered">
-					<h3 class="title is-3">Resume/CV</h3>
+				<div class="text-center">
+					<h3 class="title">Resume/CV</h3>
 					<br />
 				</div>
-				<div class="social-container columns">
-					<div class="column has-text-centered">
+				<div class="social-container row">
+					<div class="col-12 text-center">
 						<a href="#" target="_blank" id="resume-pdf" onclick="view_pdf('assets/jacky-ly-resume.pdf')">
 							<img title="Resume" class="popup" src="assets/img/resume.png" alt="Resume" />
 						</a>
@@ -243,25 +245,21 @@
 				
 		<!-- Contact Form -->
 		<div id="contact" />
-		<br />
 		<section class="section section-4">
-			<br />
 			<div class="container">
-				<div class="has-text-centered">
-					<h3 class="title is-3">Let's Connect!</h3>
+				<div class="text-center">
+					<h3 class="title">Let's Connect!</h3>
 				</div>
-				<br />
-				<div id="contact">
+				<div class="text-center" id="contact">
 					<form action="https://formspree.io/moqddoro" method="POST">
 						<input type="hidden" name="_subject" value="JackyLy.ca: Contact Inquiry" />
-						<label>
+						<label class="mt-3">
 							<input class="field is-empty" type="email" name="_replyto" placeholder="username@domain.com" required="required" />
 							<span>
 								<span>Email:</span>
 							</span>
 						</label>
-						<br /><br />
-						<label>
+						<label class="mt-3">
 							<textarea class="field is-empty" name="message" placeholder="Dear Jacky..." required="required"></textarea>
 							<span>
 								<span>Enter Message:</span>
@@ -275,15 +273,6 @@
 						<button type="submit" onclick="return checkCaptcha()">Send Message</button>
 					</form>
 				</div>
-				<!--
-				<div class="social-container columns">
-					<div class="column has-text-centered"></div>
-					<div class="column has-text-centered"><a target="_blank" href="https://www.linkedin.com/in/lyjacky11/"><img class="social-icons popup" title="LinkedIn" src="assets/img/linkedin.png" alt="LinkedIn"></a></div>
-					<div class="column has-text-centered"><a target="_blank" href="https://github.com/lyjacky11"><img class="social-icons popup" title="GitHub" src="assets/img/github.png" alt="GitHub"></a></div><div class="column has-text-centered"></div>
-					<div class="column is-4 has-text-centered popup"><a target="_blank" href="https://www.instagram.com/lyjacky11/"><img class="social-icons" title="Instagram" src="assets/img/instagram.png" alt="Instagram"></a></div>
-					<div class="column is-4 has-text-centered popup"><a target="_blank" href="https://www.facebook.com/lyjacky11"><img class="social-icons" title="Facebook" src="assets/img/fb-logo.png" alt="Facebook"></a></div>
-				</div>
-				-->
 			</div>
 		</section>
 				
@@ -293,13 +282,14 @@
 				<i id="backTop" class="popup fas fa-chevron-up"></i>
 			</a>
 			<div class="container">
-				<div class="has-text-centered">
+				<div class="text-center">
 					<!-- <h5><a target="_blank" href="https://status.jackyly.ca/">Site Status</a></h5> -->
 					<!-- <h5>Email: <a target="_blank" href="mailto:jacky.ly@ryerson.ca">jacky.ly@ryerson.ca</a></h5> -->
-					<h6>© Copyright 2018-<script>document.write(new Date().getFullYear())</script>, Jacky Ly.</h6>
+					<h6>© Copyright 2018-<script>document.write(new Date().getFullYear())</script>, <a href="https://github.com/lyjacky11" target="_blank" rel="noopener noreferrer">Jacky Ly</a>.</h6>
+					<br />
+					<h6>All trademarks and logos used are the property of their respective owners.</h6>
 				</div>
 			</div>
-			<br />
 		</section>
 		
 		<!-- jQuery and Bootstrap Bundle (includes Popper) -->
