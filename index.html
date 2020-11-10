@@ -95,7 +95,7 @@
 		</nav>
 		
 		<section class="section section-1">
-			<div class="container text-center">
+			<div class="container">
 				<!-- Profile Picture -->
 				<a onclick="document.getElementById('about').scrollIntoView()">
 					<img title="Avatar" class="avatar popup" src="assets/img/profile.png" alt="Avatar" />
@@ -129,16 +129,16 @@
 			
 			<!-- About Me -->
 			<div class="container mt-5">
-				<div class="text-center">
+				<div>
 					<h3 class="title">About Me</h3>
 				</div>
-				<div class="text-center">
+				<div>
 					<p class="lead">
 						Hi there! My name is Jacky Ly and I'm currently a co-op student studying Computer Science at Ryerson University. <br /><br />
-						I build and develop websites in HTML5/CSS3, JavaScript, React, and applications in Java, Python, C#, and more! <br />
+						I build and develop websites in HTML5/CSS3, JavaScript, React, and applications in Java, Python, C#, and more! <br /><br />
 						I can learn new concepts quickly and complete technical tasks efficiently with minimal guidance.<br /><br />
 						My <a href="https://github.com/lyjacky11?tab=repositories" target="_blank">projects</a> are available on my <a href="https://github.com/lyjacky11" target="_blank">GitHub profile</a>.
-						Feel free to check out my <a onclick="document.getElementById('resume').scrollIntoView()">resume</a> and <a onclick="document.getElementById('contact').scrollIntoView()"> contact info</a> below!
+						Feel free to check out my <a href="javascript:void(0)" onclick="document.getElementById('resume').scrollIntoView()">resume</a> and <a href="javascript:void(0)" onclick="document.getElementById('contact').scrollIntoView()"> contact info</a> below!
 					</p>
 				</div>
 			</div>
@@ -148,111 +148,83 @@
 		<div id="projects" />
 		<section class="section section-2">
 			<div class="container">
-				<div class="text-center">
-					<h3 class="title">Projects</h3>
+				<div class="title">
+					<h3>Projects</h3>
 				</div>
 				<div class="row">
-				
 					<!-- Project 1 -->
 					<div class="col-12 col-md-4">
-						<div class="box project-text">
-							<article>
-								<div>
-									<figure class="image project-figure">
-										<a target="_blank" href="https://dramas.jackyly.ca">
-											<img title="Discover Asian Dramas" class="popup" width="256" src="assets/img/kdrama-cover.png" alt="Logo" />
-										</a>
-									</figure>
-								</div>
-								<div>
-									<div class="projects_div">
-										<br />
-										<b>
-											<a target="_blank" href="https://dramas.jackyly.ca">Discover Asian Dramas</a>
-										</b> &nbsp; | &nbsp; 
-										<b>
-											<a target="_blank" href="https://github.com/lyjacky11/kdrama">GitHub Repo</a>
-										</b>
-										<br /><br />
-										<a href="https://app.netlify.com/sites/asian-dramas/deploys" target="_blank">
-											<img class="popup" alt="Deploy Status" src="https://api.netlify.com/api/v1/badges/9bef3de4-a035-47f1-b2c2-792e07f5409d/deploy-status" title="Deploy Status" width="160" />
-										</a>
-										<h6 class="mt-4">
-											<b>Languages:</b> HTML5, CSS3, JS, React
-										</h6>
-									</div>
-								</div>
-							</article>
+						<div class="project-div p-4">
+							<div class="project-image mb-4">
+								<a target="_blank" href="https://dramas.jackyly.ca">
+									<img title="Discover Asian Dramas" class="popup" width="256" src="assets/img/kdrama-cover.png" alt="Cover" />
+								</a>
+							</div>
+							<div class="project-info mb-4">
+								<h5 class="font-weight-bold">Discover Asian Dramas</h5>
+								<p>Discover and search for popular Asian dramas in Korean, Japanese, Chinese, and more!</p>
+							</div>
+							<div class="project-links mb-4 font-weight-bold">
+								<a target="_blank" href="https://dramas.jackyly.ca">Live Demo</a> &nbsp; | &nbsp; 
+								<a target="_blank" href="https://github.com/lyjacky11/kdrama">GitHub Repo</a>
+							</div>
+							<a href="https://app.netlify.com/sites/asian-dramas/deploys" target="_blank">
+								<img class="popup" alt="Deploy Status" src="https://api.netlify.com/api/v1/badges/9bef3de4-a035-47f1-b2c2-792e07f5409d/deploy-status" title="Deploy Status" width="150" />
+							</a>
+							<h6 class="mt-4">
+								<b>Languages:</b> HTML5, CSS3, JSX, React
+							</h6>
 						</div>
-						<br />
 					</div>
 					
 					<!-- Project 2 -->
 					<div class="col-12 col-md-4">
-						<div class="box project-text">
-							<article>
-								<div>
-									<figure class="image project-figure">
-										<a target="_blank" href="https://covid-app.jackyly.ca">
-											<img title="COVID Screening App" class="popup" width="256" src="assets/img/react-covid-cover.png" alt="Logo" />
-										</a>
-									</figure>
-								</div>
-								<div>
-									<div class="projects_div">
-										<br />
-										<b>
-											<a target="_blank" href="https://covid-app.jackyly.ca">COVID Screening App</a>
-										</b> &nbsp; | &nbsp; 
-										<b>
-											<a target="_blank" href="https://github.com/lyjacky11/covid-screening">GitHub Repo</a>
-										</b>
-										<br /><br />
-										<a href="https://app.netlify.com/sites/covid-screening/deploys" target="_blank">
-											<img class="popup" alt="Deploy Status" src="https://api.netlify.com/api/v1/badges/aac28ce4-ba6e-42bd-abfa-66f9536d6d61/deploy-status" title="Deploy Status" width="160" />
-										</a>
-										<h6 class="mt-4">
-											<b>Languages:</b> HTML5, CSS3, JS, React
-										</h6>
-									</div>
-								</div>
-							</article>
+						<div class="project-div p-4">
+							<div class="project-image mb-4">
+								<a target="_blank" href="https://covid-app.jackyly.ca">
+									<img title="COVID Screening App" class="popup" width="256" src="assets/img/react-covid-cover.png" alt="Cover" />
+								</a>
+							</div>
+							<div class="project-info mb-4">
+								<h5 class="font-weight-bold">COVID Screening App</h5>
+								<p>Asks the user a series of screening questions to determine if they are at risk of having COVID-19.</p>
+							</div>
+							<div class="project-links mb-4 font-weight-bold">
+								<a target="_blank" href="https://covid-app.jackyly.ca">Live Demo</a> &nbsp; | &nbsp; 
+								<a target="_blank" href="https://github.com/lyjacky11/covid-screening">GitHub Repo</a>
+							</div>
+							<a href="https://app.netlify.com/sites/covid-screening/deploys" target="_blank">
+								<img class="popup" alt="Deploy Status" src="https://api.netlify.com/api/v1/badges/aac28ce4-ba6e-42bd-abfa-66f9536d6d61/deploy-status" title="Deploy Status" width="150" />
+							</a>
+							<h6 class="mt-4">
+								<b>Languages:</b> HTML5, CSS3, JSX, React
+							</h6>
 						</div>
-						<br />
 					</div>
-										
+					
 					<!-- Project 3 -->
 					<div class="col-12 col-md-4">
-						<div class="box project-text">
-							<article>
-								<div>
-									<figure class="image project-figure">
-										<a target="_blank" href="https://timesheet.jackyly.ca">
-											<img title="Timesheets Logo" class="popup" width="256" src="assets/img/timesheets.jpg" alt="Logo" />
-										</a>
-									</figure>
-								</div>
-								<div>
-									<div class="projects_div">
-										<br />
-										<b>
-											<a target="_blank" href="https://timesheet.jackyly.ca">Time Sheet Calculator</a>
-										</b> &nbsp; | &nbsp; 
-										<b>
-											<a target="_blank" href="https://github.com/lyjacky11/timesheet-react">GitHub Repo</a>
-										</b>
-										<br /><br />
-										<a href="https://app.netlify.com/sites/timesheet-react/deploys" target="_blank">
-											<img class="popup" alt="Deploy Status" src="https://api.netlify.com/api/v1/badges/d30c6203-08f3-469f-82e1-01f4050ec145/deploy-status" title="Deploy Status" width="160" />
-										</a>
-										<h6 class="mt-4">
-											<b>Languages:</b> HTML5, CSS3, JS, React
-										</h6>
-									</div>
-								</div>
-							</article>
+						<div class="project-div p-4">
+							<div class="project-image mb-4">
+								<a target="_blank" href="https://timesheet.jackyly.ca">
+									<img title="Time Sheet Calculator" class="popup" width="256" src="assets/img/timesheets.jpg" alt="Cover" />
+								</a>
+							</div>
+							<div class="project-info mb-4">
+								<h5 class="font-weight-bold">Time Sheet Calculator</h5>
+								<p>Calculates the number of hours worked based on the shift's start, break, and end times.</p>
+							</div>
+							<div class="project-links mb-4 font-weight-bold">
+								<a target="_blank" href="https://timesheet.jackyly.ca">Live Demo</a> &nbsp; | &nbsp; 
+								<a target="_blank" href="https://github.com/lyjacky11/timesheet-react">GitHub Repo</a>
+							</div>
+							<a href="https://app.netlify.com/sites/timesheet-react/deploys" target="_blank">
+								<img class="popup" alt="Deploy Status" src="https://api.netlify.com/api/v1/badges/d30c6203-08f3-469f-82e1-01f4050ec145/deploy-status" title="Deploy Status" width="150" />
+							</a>
+							<h6 class="mt-4">
+								<b>Languages:</b> HTML5, CSS3, JSX, React
+							</h6>
 						</div>
-						<br />
 					</div>
 				</div>
 			</div>
@@ -263,12 +235,12 @@
 		<section class="section section-3">
 			<br />
 			<div class="container">
-				<div class="text-center">
+				<div>
 					<h3 class="title">Resume/CV</h3>
 					<br />
 				</div>
 				<div class="social-container row">
-					<div class="col-12 text-center">
+					<div class="col-12">
 						<a href="#" target="_blank" id="resume-pdf" onclick="view_pdf('assets/jacky-ly-resume.pdf')">
 							<img title="Resume" class="popup" src="assets/img/resume.png" alt="Resume" />
 						</a>
@@ -281,10 +253,10 @@
 		<div id="contact" />
 		<section class="section section-4">
 			<div class="container">
-				<div class="text-center">
+				<div>
 					<h3 class="title">Let's Connect!</h3>
 				</div>
-				<div class="text-center" id="contact">
+				<div id="contact">
 					<form action="https://formspree.io/moqddoro" method="POST">
 						<input type="hidden" name="_subject" value="JackyLy.ca: Contact Inquiry" />
 						<label class="mt-3">
@@ -316,7 +288,7 @@
 				<i id="backTop" class="popup fas fa-chevron-up"></i>
 			</a>
 			<div class="container">
-				<div class="text-center">
+				<div>
 					<!-- <h5><a target="_blank" href="https://status.jackyly.ca/">Site Status</a></h5> -->
 					<!-- <h5>Email: <a target="_blank" href="mailto:jacky.ly@ryerson.ca">jacky.ly@ryerson.ca</a></h5> -->
 					<h6>© Copyright 2018-<script>document.write(new Date().getFullYear())</script>, <a href="https://github.com/lyjacky11" target="_blank" rel="noopener noreferrer">Jacky Ly</a>.</h6>
