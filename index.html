@@ -51,25 +51,20 @@
 		<div id="home" />
 		<!-- Navbar -->
 		<nav class="sticky nav container">
-			<!-- This "nav-menu" is hidden on mobile -->
-			<!-- Add the modifier "is-active" to display it on mobile -->
+			<!-- This "nav-menu" is hidden on mobile, add the modifier "is-active" to display it on mobile -->
 			
-			<!-- Left nav bar -->
+			<!-- Left navbar -->
 			<div class="nav-left">
-				<a target="_blank" href="https://www.linkedin.com/in/lyjacky11/" class="nav-item">
-					<span class="icon">
-						<i class="fab fa-linkedin"></i>
-					</span>
+				<a class="nav-item" href="https://www.linkedin.com/in/lyjacky11/" target="_blank">
+					<span class="icon"><i class="fab fa-linkedin"></i></span>
 				</a>
-				<a target="_blank" href="http://github.com/lyjacky11" class="nav-item">
-					<span class="icon">
-						<i class="fab fa-github"></i>
-					</span>
+				<a class="nav-item" href="http://github.com/lyjacky11" target="_blank">
+					<span class="icon"><i class="fab fa-github"></i></span>
 				</a>
 			</div>
 			
-			<!-- Right nav bar -->
-			<div id="sideMenu" class="nav-right sidenav">
+			<!-- Right navbar -->
+			<div class="nav-right sidenav" id="sideMenu">
 				<div id="navLinks">
 					<a class="closebtn hidden" href="javascript:void(0)" onclick="closeNav()"> &times; </a>
 					<a class="nav-item" onclick="closeNav(); document.getElementById('home').scrollIntoView();">
@@ -95,9 +90,10 @@
 			<!-- <span class="nav-toggle"><span></span><span></span><span></span></span> -->
 		</nav>
 		
+		<!-- Section 1 -->
 		<section class="section section-1">
 			<div class="container">
-				<!-- Profile Picture -->
+				<!-- Avatar -->
 				<a onclick="document.getElementById('about').scrollIntoView()">
 					<img title="Avatar" class="avatar popup" src="assets/img/profile.png" alt="Avatar" />
 				</a>
@@ -130,23 +126,22 @@
 			
 			<!-- About Me -->
 			<div class="container mt-5">
-				<div>
-					<h3 class="title">About Me</h3>
+				<div class="title">
+					<h3>About Me</h3>
 				</div>
-				<div>
-					<p class="lead">
+				<div class="lead">
+					<p>
 						Hi there! My name is Jacky Ly and I'm currently a co-op student studying Computer Science at Ryerson University. <br /><br />
 						I build and develop websites in HTML5/CSS3, JavaScript, React, and applications in Java, Python, C#, and more! <br /><br />
-						I can learn new concepts quickly and complete technical tasks efficiently with minimal guidance.<br /><br />
 						My <a href="https://github.com/lyjacky11?tab=repositories" target="_blank">projects</a> are available on my <a href="https://github.com/lyjacky11" target="_blank">GitHub profile</a>.
 						Feel free to check out my <a href="javascript:void(0)" onclick="document.getElementById('resume').scrollIntoView()">resume</a> and <a href="javascript:void(0)" onclick="document.getElementById('contact').scrollIntoView()"> contact info</a> below!
 					</p>
 				</div>
 			</div>
 		</section>
-				
-		<!-- Projects -->
+		
 		<div id="projects" />
+		<!-- Section 2 -->
 		<section class="section section-2">
 			<div class="container">
 				<div class="title">
@@ -230,17 +225,15 @@
 				</div>
 			</div>
 		</section>
-				
-		<!-- Resume -->
+		
 		<div id="resume" />
+		<!-- Section 3 -->
 		<section class="section section-3">
-			<br />
 			<div class="container">
-				<div>
-					<h3 class="title">Resume/CV</h3>
-					<br />
+				<div class="title">
+					<h3>Resume/CV</h3>
 				</div>
-				<div class="social-container row">
+				<div class="social-container row mt-5">
 					<div class="col-12">
 						<a href="#" target="_blank" id="resume-pdf" onclick="view_pdf('assets/jacky-ly-resume.pdf')">
 							<img title="Resume" class="popup" src="assets/img/resume.png" alt="Resume" />
@@ -249,33 +242,27 @@
 				</div>
 			</div>
 		</section>
-				
-		<!-- Contact Form -->
+		
 		<div id="contact" />
+		<!-- Section 4 -->
 		<section class="section section-4">
 			<div class="container">
-				<div>
-					<h3 class="title">Let's Connect!</h3>
+				<div class="title">
+					<h3>Let's Connect!</h3>
 				</div>
 				<div id="contact">
 					<form action="https://formspree.io/moqddoro" method="POST">
 						<input type="hidden" name="_subject" value="JackyLy.ca: Contact Inquiry" />
 						<label class="mt-3">
 							<input class="field is-empty" type="email" name="_replyto" placeholder="username@domain.com" required="required" />
-							<span>
-								<span>Email:</span>
-							</span>
+							<span><span>Email:</span></span>
 						</label>
 						<label class="mt-3">
 							<textarea class="field is-empty" name="message" placeholder="Dear Jacky..." required="required"></textarea>
-							<span>
-								<span>Enter Message:</span>
-							</span>
+							<span><span>Enter Message:</span></span>
 						</label>
 						<div class="g-recaptcha" data-sitekey="6LcuvtUUAAAAAOEw88wO3bttoUtEAvLoSSN05-W_" data-theme="dark"></div>
-						<p id="captchaError">
-							Oops! reCAPTCHA failed. <br /> Please check the reCAPTCHA box above!
-						</p>
+						<p id="captchaError">Oops! reCAPTCHA failed. <br /> Please check the reCAPTCHA box above!</p>
 						<br />
 						<button type="submit" onclick="return checkCaptcha()">Send Message</button>
 					</form>
@@ -283,19 +270,15 @@
 			</div>
 		</section>
 				
-		<!-- Footer -->
+		<!-- Section 5 -->
 		<section class="section section-5">
-			<a onclick="document.getElementById('home').scrollIntoView()">
-				<i id="backTop" class="popup fas fa-chevron-up"></i>
+			<a class="backTop popup" onclick="document.getElementById('home').scrollIntoView()">
+				<i class="fas fa-chevron-up"></i>
 			</a>
 			<div class="container">
-				<div>
-					<!-- <h5><a target="_blank" href="https://status.jackyly.ca/">Site Status</a></h5> -->
-					<!-- <h5>Email: <a target="_blank" href="mailto:jacky.ly@ryerson.ca">jacky.ly@ryerson.ca</a></h5> -->
-					<h6>© Copyright 2018-<script>document.write(new Date().getFullYear())</script>, <a href="https://github.com/lyjacky11" target="_blank" rel="noopener noreferrer">Jacky Ly</a>.</h6>
-					<br />
-					<h6>All trademarks and logos used are the property of their respective owners.</h6>
-				</div>
+				<h6>© Copyright 2018-<script>document.write(new Date().getFullYear())</script>, <a href="https://github.com/lyjacky11" target="_blank">Jacky Ly</a>.</h6>
+				<br />
+				<h6>All trademarks and logos used are the property of their respective owners.</h6>
 			</div>
 		</section>
 		
