@@ -149,6 +149,9 @@ section {
 	 border-radius: 25px;
 	 margin: 10px 5px;
 }
+.project-cover {
+	border-radius: 15px;
+}
 .backTop {
 	padding: 15px 20px;
 	border-radius: 15px;
