@@ -151,6 +151,7 @@ section {
 }
 .project-cover {
 	border-radius: 15px;
+	max-width: 100%;
 }
 .backTop {
 	padding: 15px 20px;
